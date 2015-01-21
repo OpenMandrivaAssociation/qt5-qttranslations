@@ -14,6 +14,7 @@ License:	LGPLv2 with exceptions or GPLv3 with exceptions and GFDL
 URL:		http://www.qt-project.org
 Source0:	http://download.qt-project.org/official_releases/qt/%{api}.%{qtminor}/%{version}/submodules/%{qttarballdir}.tar.xz
 BuildRequires:	qt5-qtbase-devel
+BuildRequires:	qt5-linguist-tools
 BuildRequires:	qt5-qttools
 BuildArch:	noarch
 
