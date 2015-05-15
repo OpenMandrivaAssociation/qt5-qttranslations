@@ -1,4 +1,4 @@
-%define beta alpha
+%define beta beta
 %define qttarballdir qttranslations-opensource-src-%{version}%{?beta:-%{beta}}
 
 Name:		qt5-qttranslations
