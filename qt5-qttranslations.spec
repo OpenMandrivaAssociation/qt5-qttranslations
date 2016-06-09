@@ -1,7 +1,7 @@
 %define beta %nil
 
 Name:		qt5-qttranslations
-Version:	5.6.0
+Version:	5.6.1
 %if "%{beta}" != ""
 Release:	1.%{beta}.1
 %define qttarballdir qttranslations-opensource-src-%{version}-%{beta}
