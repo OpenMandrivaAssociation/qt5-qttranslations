@@ -1,10 +1,10 @@
-%define beta beta
+%define beta beta2
 
 Name:		qt5-qttranslations
 Version:	5.10.0
 %if "%{beta}" != ""
 Release:	0.%{beta}.1
-%define qttarballdir qttranslations-everywhere-src-%{version}-%{beta}
+%define qttarballdir qttranslations-everywhere-src-%{version}
 Source0:	http://download.qt.io/development_releases/qt/%(echo %{version}|cut -d. -f1-2)/%{version}-%{beta}/submodules/%{qttarballdir}.tar.xz
 %else
 Release:	1
