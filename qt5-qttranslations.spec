@@ -1,4 +1,4 @@
-%define beta rc3
+%define beta %{nil}
 
 Name:		qt5-qttranslations
 Version:	5.10.0
@@ -8,7 +8,7 @@ Release:	0.%{beta}.1
 Source0:	http://download.qt.io/development_releases/qt/%(echo %{version}|cut -d. -f1-2)/%{version}-%(echo %{beta} |sed -e "s,1$,,")/submodules/%{qttarballdir}.tar.xz
 %else
 Release:	1
-%define qttarballdir qttranslations-opensource-src-%{version}
+%define qttarballdir qttranslations-everywhere-src-%{version}
 Source0:	http://download.qt.io/official_releases/qt/%(echo %{version}|cut -d. -f1-2)/%{version}/submodules/%{qttarballdir}.tar.xz
 %endif
 Summary:	Qt GUI toolkit
