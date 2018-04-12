@@ -19,6 +19,8 @@ BuildRequires:	qmake5 >= %{version}
 BuildRequires:	pkgconfig(Qt5Core) >= %{version}
 BuildRequires:	qt5-linguist-tools
 BuildRequires:	qt5-qttools
+# For the Provides: generator
+BuildRequires:	cmake >= 3.11.0-1
 BuildArch:	noarch
 
 %description
