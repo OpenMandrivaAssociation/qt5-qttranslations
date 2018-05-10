@@ -1,4 +1,4 @@
-%define beta beta4
+%define beta rc
 
 Name:		qt5-qttranslations
 Version:	5.11.0
