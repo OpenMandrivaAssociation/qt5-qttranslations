@@ -32,14 +32,14 @@ Translation files for Qt Project apps.
 #------------------------------------------------------------------------------
 
 %prep
-%setup -q -n %qttarballdir
+%autosetup -n %qttarballdir -p1
 
 %build
 %qmake_qt5
 
-%make
+%make_build
 
 #------------------------------------------------------------------------------
 
 %install
-%makeinstall_std INSTALL_ROOT=%{buildroot}
+%make_install INSTALL_ROOT=%{buildroot}
