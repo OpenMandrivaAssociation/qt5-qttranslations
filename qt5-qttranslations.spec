@@ -1,4 +1,4 @@
-%define beta alpha
+%define beta beta1
 
 Name:		qt5-qttranslations
 Version:	5.15.0
