@@ -1,0 +1,39 @@
+From cb20da70ada2ffb92a08a232ddad5b1b51ade033 Mon Sep 17 00:00:00 2001
+From: Oswald Buddenhagen <oswald.buddenhagen@gmx.de>
+Date: Mon, 6 Jan 2020 00:03:57 +0100
+Subject: [PATCH 01/16] fix translation of "discard" in italian
+
+contributed by Matteo Monteleone.
+
+Fixes: QTBUG-81089
+Change-Id: Iad46a27a9927dbbb37217e2549693a9d230d087f
+Reviewed-by: Oswald Buddenhagen <oswald.buddenhagen@gmx.de>
+---
+ translations/qtbase_it.ts | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/translations/qtbase_it.ts b/translations/qtbase_it.ts
+index f59c6d4..688920d 100644
+--- a/translations/qtbase_it.ts
++++ b/translations/qtbase_it.ts
+@@ -689,7 +689,7 @@ Premi ESC per annullare</translation>
+     </message>
+     <message>
+         <source>Discard</source>
+-        <translation type="vanished">Tralascia</translation>
++        <translation type="vanished">Scarta</translation>
+     </message>
+     <message>
+         <source>&amp;Yes</source>
+@@ -3518,7 +3518,7 @@ Vuoi eliminarlo comunque?</translation>
+     </message>
+     <message>
+         <source>Discard</source>
+-        <translation>Tralascia</translation>
++        <translation>Scarta</translation>
+     </message>
+     <message>
+         <source>Help</source>
+-- 
+2.31.1
+

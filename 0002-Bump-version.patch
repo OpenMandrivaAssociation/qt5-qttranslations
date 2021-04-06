@@ -1,0 +1,21 @@
+From 74d8329bf6bbda2b925dd8bfc816b0577254526a Mon Sep 17 00:00:00 2001
+From: Alexandru Croitor <alexandru.croitor@qt.io>
+Date: Tue, 28 Jan 2020 11:57:25 +0100
+Subject: [PATCH 02/16] Bump version
+
+---
+ .qmake.conf | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/.qmake.conf b/.qmake.conf
+index 8f1500e..04f5843 100644
+--- a/.qmake.conf
++++ b/.qmake.conf
+@@ -1,3 +1,3 @@
+ load(qt_build_config)
+ 
+-MODULE_VERSION = 5.12.7
++MODULE_VERSION = 5.12.8
+-- 
+2.31.1
+

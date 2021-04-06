@@ -1,0 +1,5705 @@
+From f4c821a18e4a22ae83db0719fc636cbe0cd03cb5 Mon Sep 17 00:00:00 2001
+From: Li Xinwei <1326710505@qq.com>
+Date: Thu, 26 Nov 2020 19:35:28 +0800
+Subject: [PATCH 14/16] Remove obsolete entries from zh_CN translations
+
+Amends 0106ec52.
+
+Change-Id: I86f58e480c863a52b180d062b2609a84ed4e47a4
+Reviewed-by: Oswald Buddenhagen <oswald.buddenhagen@gmx.de>
+---
+ translations/assistant_zh_CN.ts        | 434 ------------
+ translations/linguist_zh_CN.ts         | 926 -------------------------
+ translations/qtbase_zh_CN.ts           |  32 +-
+ translations/qtconnectivity_zh_CN.ts   | 555 +--------------
+ translations/qtdeclarative_zh_CN.ts    | 585 +---------------
+ translations/qtlocation_zh_CN.ts       | 895 ------------------------
+ translations/qtmultimedia_zh_CN.ts     | 617 ----------------
+ translations/qtquickcontrols2_zh_CN.ts | 604 ----------------
+ translations/qtquickcontrols_zh_CN.ts  | 209 ------
+ translations/qtscript_zh_CN.ts         | 183 -----
+ translations/qtxmlpatterns_zh_CN.ts    | 264 -------
+ 11 files changed, 44 insertions(+), 5260 deletions(-)
+
+diff --git a/translations/assistant_zh_CN.ts b/translations/assistant_zh_CN.ts
+index 9d8b771..cb3fa30 100644
+--- a/translations/assistant_zh_CN.ts
++++ b/translations/assistant_zh_CN.ts
+@@ -515,116 +515,6 @@ Reason:
+         <translation>未过滤的</translation>
+     </message>
+ </context>
+-<context>
+-    <name>HelpGenerator</name>
+-    <message>
+-        <source>Warning: %1</source>
+-        <translation>警告：%1</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>HelpGeneratorPrivate</name>
+-    <message>
+-        <source>Invalid help data.</source>
+-        <translation>无效的帮助数据。</translation>
+-    </message>
+-    <message>
+-        <source>No output file name specified.</source>
+-        <translation>未指定输出文件名。</translation>
+-    </message>
+-    <message>
+-        <source>The file %1 cannot be overwritten.</source>
+-        <translation>无法覆盖文件 %1。</translation>
+-    </message>
+-    <message>
+-        <source>Building up file structure...</source>
+-        <translation>正在建立文件结构…</translation>
+-    </message>
+-    <message>
+-        <source>Cannot open data base file %1.</source>
+-        <translation>无法打开数据库文件 %1。</translation>
+-    </message>
+-    <message>
+-        <source>Cannot register namespace &quot;%1&quot;.</source>
+-        <translation>无法注册命名空间“%1”。</translation>
+-    </message>
+-    <message>
+-        <source>Insert custom filters...</source>
+-        <translation>插入自定义过滤器…</translation>
+-    </message>
+-    <message>
+-        <source>Insert help data for filter section (%1 of %2)...</source>
+-        <translation>插入过滤器部分的帮助数据（%1 共 %2）…</translation>
+-    </message>
+-    <message>
+-        <source>Documentation successfully generated.</source>
+-        <translation>文档已成功生成。</translation>
+-    </message>
+-    <message>
+-        <source>Some tables already exist.</source>
+-        <translation>某些表已存在。</translation>
+-    </message>
+-    <message>
+-        <source>Cannot create tables.</source>
+-        <translation>无法创建表。</translation>
+-    </message>
+-    <message>
+-        <source>Cannot register virtual folder.</source>
+-        <translation>无法注册虚拟文件夹。</translation>
+-    </message>
+-    <message>
+-        <source>Insert files...</source>
+-        <translation>插入文件…</translation>
+-    </message>
+-    <message>
+-        <source>The file %1 does not exist, skipping it...</source>
+-        <translation>文件 %1 不存在，跳过它…</translation>
+-    </message>
+-    <message>
+-        <source>Cannot open file %1, skipping it...</source>
+-        <translation>无法打开文件 %1，跳过它…</translation>
+-    </message>
+-    <message>
+-        <source>The filter %1 is already registered.</source>
+-        <translation>过滤器 %1 已经注册。</translation>
+-    </message>
+-    <message>
+-        <source>Cannot register filter %1.</source>
+-        <translation>无法注册过滤器 %1。</translation>
+-    </message>
+-    <message>
+-        <source>Insert indices...</source>
+-        <translation>插入索引…</translation>
+-    </message>
+-    <message>
+-        <source>Insert contents...</source>
+-        <translation>插入内容…</translation>
+-    </message>
+-    <message>
+-        <source>Cannot insert contents.</source>
+-        <translation>无法插入内容。</translation>
+-    </message>
+-    <message>
+-        <source>Cannot register contents.</source>
+-        <translation>无法注册内容。</translation>
+-    </message>
+-    <message>
+-        <source>File &quot;%1&quot; does not exist.</source>
+-        <translation>文件“%1”不存在。</translation>
+-    </message>
+-    <message>
+-        <source>File &quot;%1&quot; cannot be opened.</source>
+-        <translation>无法打开文件“%1”。</translation>
+-    </message>
+-    <message>
+-        <source>File &quot;%1&quot; contains an invalid link to file &quot;%2&quot;</source>
+-        <translation>文件“%1”包含指向文件“%2”的无效链接</translation>
+-    </message>
+-    <message>
+-        <source>Invalid links in HTML files.</source>
+-        <translation>HTML 文件中的链接无效。</translation>
+-    </message>
+-</context>
+ <context>
+     <name>HelpViewer</name>
+     <message>
+@@ -1063,323 +953,6 @@ Reason:
+         <translation>每个单独页面都按选项卡显示</translation>
+     </message>
+ </context>
+-<context>
+-    <name>QCollectionGenerator</name>
+-    <message>
+-        <source>Unknown token at line %1.</source>
+-        <translation>行 %1 处的未知令牌。</translation>
+-    </message>
+-    <message>
+-        <source>Unknown token at line %1. Expected &quot;QtHelpCollectionProject&quot;.</source>
+-        <translation>行 %1 处的未知令牌。应为“QtHelpCollectionProject”。</translation>
+-    </message>
+-    <message>
+-        <source>Missing end tags.</source>
+-        <translation>缺少结束标记。</translation>
+-    </message>
+-    <message>
+-        <source>Missing input or output file for help file generation.</source>
+-        <translation>缺少用于生成帮助文件的输入或输出文件。</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>QHelp</name>
+-    <message>
+-        <source>Untitled</source>
+-        <translation>未命名</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>QHelpCollectionHandler</name>
+-    <message>
+-        <source>The collection file &quot;%1&quot; is not set up yet.</source>
+-        <translation>尚未设置集合文件“%1”。</translation>
+-    </message>
+-    <message>
+-        <source>Cannot load sqlite database driver.</source>
+-        <translation>无法加载 sqlite 数据库驱动程序。</translation>
+-    </message>
+-    <message>
+-        <source>Cannot open collection file: %1</source>
+-        <translation>无法打开集合文件：%1</translation>
+-    </message>
+-    <message>
+-        <source>Cannot create tables in file %1.</source>
+-        <translation>无法打开集合文件：%1</translation>
+-    </message>
+-    <message>
+-        <source>Cannot create index tables in file %1.</source>
+-        <translation>无法在文件 %1 中创建索引表。</translation>
+-    </message>
+-    <message>
+-        <source>Cannot register index tables in file %1.</source>
+-        <translation>无法在文件 %1 中注册索引表。</translation>
+-    </message>
+-    <message>
+-        <source>Cannot unregister index tables in file %1.</source>
+-        <translation>无法取消注册文件 %1 中的索引表。</translation>
+-    </message>
+-    <message>
+-        <source>The collection file &quot;%1&quot; already exists.</source>
+-        <translation>集合文件“%1”已存在。</translation>
+-    </message>
+-    <message>
+-        <source>Cannot create directory: %1</source>
+-        <translation>无法创建目录：%1</translation>
+-    </message>
+-    <message>
+-        <source>Cannot copy collection file: %1</source>
+-        <translation>无法复制集合文件：%1</translation>
+-    </message>
+-    <message>
+-        <source>Unknown filter &quot;%1&quot;.</source>
+-        <translation>未知过滤器“%1”。</translation>
+-    </message>
+-    <message>
+-        <source>Cannot register filter %1.</source>
+-        <translation>无法注册过滤器 %1。</translation>
+-    </message>
+-    <message>
+-        <source>Cannot open documentation file %1.</source>
+-        <translation>无法打开文档文件 %1。</translation>
+-    </message>
+-    <message>
+-        <source>Invalid documentation file &quot;%1&quot;.</source>
+-        <translation>文档文件“%1”无效。</translation>
+-    </message>
+-    <message>
+-        <source>The namespace %1 was not registered.</source>
+-        <translation>命名空间 %1 未注册。</translation>
+-    </message>
+-    <message>
+-        <source>Namespace %1 already exists.</source>
+-        <translation>命名空间 %1 已存在。</translation>
+-    </message>
+-    <message>
+-        <source>Cannot register namespace &quot;%1&quot;.</source>
+-        <translation>无法注册命名空间“%1”。</translation>
+-    </message>
+-    <message>
+-        <source>Cannot register virtual folder &apos;%1&apos;.</source>
+-        <translation>无法注册虚拟文件夹“%1”。</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>QHelpDBReader</name>
+-    <message>
+-        <source>Cannot open database &quot;%1&quot; &quot;%2&quot;: %3</source>
+-        <extracomment>The placeholders are: %1 - The name of the database which cannot be opened %2 - The unique id for the connection %3 - The actual error string</extracomment>
+-        <translation>无法打开数据库“%1”“%2”：%3</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>QHelpGenerator</name>
+-    <message>
+-        <source>Reading collection config file...
+-</source>
+-        <translation>正在读取集合配置文件…
+-</translation>
+-    </message>
+-    <message>
+-        <source>Collection config file error: %1
+-</source>
+-        <translation>集合配置文件错误：%1
+-</translation>
+-    </message>
+-    <message>
+-        <source>Generating help for %1...
+-</source>
+-        <translation>正在为 %1 生成帮助…
+-</translation>
+-    </message>
+-    <message>
+-        <source>Creating collection file...
+-</source>
+-        <translation>正在创建集合文件…
+-</translation>
+-    </message>
+-    <message>
+-        <source>The file %1 cannot be overwritten.
+-</source>
+-        <translation>无法覆盖文件 %1。
+-</translation>
+-    </message>
+-    <message>
+-        <source>Cannot open %1.
+-</source>
+-        <translation>无法打开 %1。
+-</translation>
+-    </message>
+-    <message>
+-        <source>Cannot open referenced image file %1.
+-</source>
+-        <translation>无法打开引用的图像文件 %1。
+-</translation>
+-    </message>
+-    <message>
+-        <source>Missing output file name.</source>
+-        <translation>缺少输出文件名。</translation>
+-    </message>
+-    <message>
+-        <source>Qt Help Generator version 1.0 (Qt %1)
+-</source>
+-        <translation>Qt 帮助生成器版本 1.0（Qt %1）
+-</translation>
+-    </message>
+-    <message>
+-        <source>Missing input file name.</source>
+-        <translation>缺少输入文件名。</translation>
+-    </message>
+-    <message>
+-        <source>Unknown input file type.</source>
+-        <translation>未知的输入文件类型。</translation>
+-    </message>
+-    <message>
+-        <source>
+-Usage:
+-
+-qhelpgenerator &lt;file&gt; [options]
+-
+-  -o &lt;output-file&gt;       Generates a Qt compressed help
+-                         called &lt;output-file&gt; (*.qch) for the
+-                         Qt help project &lt;file&gt; (*.qhp).
+-                         Generates a Qt help collection
+-                         called &lt;output-file&gt; (*.qhc) for the
+-                         Qt help collection project &lt;file&gt; (*.qhcp).
+-                         If this option is not specified
+-                         a default name will be used
+-                         (*.qch for *.qhp and *.qhc for *.qhcp).
+-  -c                     Checks whether all links in HTML files
+-                         point to files in this help project.
+-  -s                     Suppresses status messages.
+-  -v                     Displays the version of 
+-                         qhelpgenerator.
+-
+-</source>
+-        <translation>
+-用法：
+-
+-qhelpgenerator &lt;file&gt; [options]
+-
+-  -o &lt;output-file&gt;       生成 Qt 压缩帮助
+-                         名为 &lt;output-file&gt; (*.qch) 来自
+-                         Qt 帮助项目 &lt;file&gt; (*.qhp)。
+-                         生成 Qt 帮助集合
+-                         名为 &lt;output-file&gt; (*.qhc) 来自
+-                         Qt 帮助集合项目 &lt;file&gt; (*.qhcp)。
+-                         如果未指定此选项
+-                         将使用默认名称
+-                         (*.qch 对应 *.qhp 和 *.qhc 对应 *.qhcp)。
+-  -c                     检查 HTML 文件中的所有链接
+-                         是否指向此帮助项目中的文件。
+-  -s                     禁止状态消息。
+-  -v                     显示 qhelpgenerator 版本。
+-
+-</translation>
+-    </message>
+-    <message>
+-        <source>Could not open %1.
+-</source>
+-        <translation>无法打开 %1。
+-</translation>
+-    </message>
+-    <message>
+-        <source>Could not create output directory: %1
+-</source>
+-        <translation>无法创建输出目录：%1
+-</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>QHelpProject</name>
+-    <message>
+-        <source>Skipping unknown token &lt;%1&gt; in file &quot;%2&quot;.</source>
+-        <translation>跳过文件“%2”中的未知标记&lt;%1&gt;。</translation>
+-    </message>
+-    <message>
+-        <source>Unknown token. Expected &quot;QtHelpProject&quot;.</source>
+-        <translation>未知令牌。应为“QtHelpProject”。</translation>
+-    </message>
+-    <message>
+-        <source>Error in line %1: %2</source>
+-        <translation>行 %1 中的错误：%2</translation>
+-    </message>
+-    <message>
+-        <source>Virtual folder has invalid syntax in file: &quot;%1&quot;</source>
+-        <translation>虚拟文件夹在文件中的语法无效：“%1”</translation>
+-    </message>
+-    <message>
+-        <source>Namespace &quot;%1&quot; has invalid syntax in file: &quot;%2&quot;</source>
+-        <translation>命名空间“%1”在文件中的语法无效：“%2”</translation>
+-    </message>
+-    <message>
+-        <source>Missing namespace in QtHelpProject file: &quot;%1&quot;</source>
+-        <translation>QtHelpProject 文件中缺少命名空间：“%1”</translation>
+-    </message>
+-    <message>
+-        <source>Missing virtual folder in QtHelpProject file: &quot;%1&quot;</source>
+-        <translation>QtHelpProject 文件中缺少虚拟文件夹：“%1”</translation>
+-    </message>
+-    <message>
+-        <source>The input file %1 could not be opened.</source>
+-        <translation>无法打开输入文件 %1。</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>QHelpSearchQueryWidget</name>
+-    <message>
+-        <source>Search for:</source>
+-        <translation>搜索：</translation>
+-    </message>
+-    <message>
+-        <source>Previous search</source>
+-        <translation>上一个搜索</translation>
+-    </message>
+-    <message>
+-        <source>Next search</source>
+-        <translation>下一个搜索</translation>
+-    </message>
+-    <message>
+-        <source>Search</source>
+-        <translation>搜索</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>QHelpSearchResultWidget</name>
+-    <message numerus="yes">
+-        <source>%1 - %2 of %n Hits</source>
+-        <translation>
+-            <numerusform>%1 - %2 共 %n 命中</numerusform>
+-        </translation>
+-    </message>
+-    <message>
+-        <source>0 - 0 of 0 Hits</source>
+-        <translation>0 - 0 共 0 命中</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>QResultWidget</name>
+-    <message>
+-        <source>Search Results</source>
+-        <translation>搜索结果</translation>
+-    </message>
+-    <message>
+-        <source>Note:</source>
+-        <translation>注：</translation>
+-    </message>
+-    <message>
+-        <source>The search results may not be complete since the documentation is still being indexed.</source>
+-        <translation>搜索结果可能不完整，因为文档仍在索引中。</translation>
+-    </message>
+-    <message>
+-        <source>Your search did not match any documents.</source>
+-        <translation>您的搜索与任何文档都不匹配。</translation>
+-    </message>
+-    <message>
+-        <source>(The reason for this might be that the documentation is still being indexed.)</source>
+-        <translation>（原因可能是文档仍在索引中。）</translation>
+-    </message>
+-</context>
+ <context>
+     <name>RemoteControl</name>
+     <message>
+@@ -1460,11 +1033,4 @@ qhelpgenerator &lt;file&gt; [options]
+         <translation>选择&lt;b&gt;%1&lt;/b&gt;的主题：</translation>
+     </message>
+ </context>
+-<context>
+-    <name>fulltextsearch::qt::QHelpSearchIndexWriter</name>
+-    <message>
+-        <source>Cannot open database &quot;%1&quot; using connection &quot;%2&quot;: %3</source>
+-        <translation>无法使用连接“%2”打开数据库“%1”：%3</translation>
+-    </message>
+-</context>
+ </TS>
+diff --git a/translations/linguist_zh_CN.ts b/translations/linguist_zh_CN.ts
+index 0d17f6e..d544d4e 100644
+--- a/translations/linguist_zh_CN.ts
++++ b/translations/linguist_zh_CN.ts
+@@ -311,276 +311,8 @@ Will assume a single universal form.</source>
+         <translation>是否删除非空长度变量？</translation>
+     </message>
+ </context>
+-<context>
+-    <name>LConvert</name>
+-    <message>
+-        <source>
+-Usage:
+-    lconvert [options] &lt;infile&gt; [&lt;infile&gt;...]
+-
+-lconvert is part of Qt&apos;s Linguist tool chain. It can be used as a
+-stand-alone tool to convert and filter translation data files.
+-The following file formats are supported:
+-
+-%1
+-If multiple input files are specified, they are merged with
+-translations from later files taking precedence.
+-
+-Options:
+-    -h
+-    -help  Display this information and exit.
+-
+-    -i &lt;infile&gt;
+-    -input-file &lt;infile&gt;
+-           Specify input file. Use if &lt;infile&gt; might start with a dash.
+-           This option can be used several times to merge inputs.
+-           May be &apos;-&apos; (standard input) for use in a pipe.
+-
+-    -o &lt;outfile&gt;
+-    -output-file &lt;outfile&gt;
+-           Specify output file. Default is &apos;-&apos; (standard output).
+-
+-    -if &lt;informat&gt;
+-    -input-format &lt;format&gt;
+-           Specify input format for subsequent &lt;infile&gt;s.
+-           The format is auto-detected from the file name and defaults to &apos;ts&apos;.
+-
+-    -of &lt;outformat&gt;
+-    -output-format &lt;outformat&gt;
+-           Specify output format. See -if.
+-
+-    -drop-tags &lt;regexp&gt;
+-           Drop named extra tags when writing TS or XLIFF files.
+-           May be specified repeatedly.
+-
+-    -drop-translations
+-           Drop existing translations and reset the status to &apos;unfinished&apos;.
+-           Note: this implies --no-obsolete.
+-
+-    -source-language &lt;language&gt;[_&lt;region&gt;]
+-           Specify/override the language of the source strings. Defaults to
+-           POSIX if not specified and the file does not name it yet.
+-
+-    -target-language &lt;language&gt;[_&lt;region&gt;]
+-           Specify/override the language of the translation.
+-           The target language is guessed from the file name if this option
+-           is not specified and the file contents name no language yet.
+-
+-    -no-obsolete
+-           Drop obsolete messages.
+-
+-    -no-finished
+-           Drop finished messages.
+-
+-    -no-untranslated
+-           Drop untranslated messages.
+-
+-    -sort-contexts
+-           Sort contexts in output TS file alphabetically.
+-
+-    -locations {absolute|relative|none}
+-           Override how source code references are saved in TS files.
+-           Default is absolute.
+-
+-    -no-ui-lines
+-           Drop line numbers from references to UI files.
+-
+-    -verbose
+-           be a bit more verbose
+-
+-Long options can be specified with only one leading dash, too.
+-
+-Return value:
+-    0 on success
+-    1 on command line parse failures
+-    2 on read failures
+-    3 on write failures
+-</source>
+-        <translation>
+-用法：
+-    lconvert [options] &lt;infile&gt; [&lt;infile&gt;...]
+-
+-lconvert 是 Qt 语言学工具链的一部分。它可以用作
+-用于转换和过滤翻译数据文件的独立工具。
+-支持以下文件格式
+-
+-%1
+-如果指定了多个输入文件，则将它们合并
+-来自以后文件的翻译优先。
+-
+-选项：
+-    -h
+-    -help  显示此信息并退出。
+-
+-    -i &lt;infile&gt;
+-    -input-file &lt;infile&gt;
+-           指定输入文件。如果&lt;infile&gt;可能以破折号开头，请使用。
+-           可以多次使用此选项来合并输入。
+-           可以是&quot;-&quot;（标准输入）用于管道。
+-
+-    -o &lt;outfile&gt;
+-    -output-file &lt;outfile&gt;
+-           指定输出文件。默认为 &quot;-&quot;（标准输出）。
+-
+-    -if &lt;informat&gt;
+-    -input-format &lt;format&gt;
+-           指定后续&lt;infile&gt;的输入格式。
+-           从文件名自动检测格式，默认为 &quot;ts&quot;。
+-
+-    -of &lt;outformat&gt;
+-    -output-format &lt;outformat&gt;
+-           指定输出格式。查看 -if。
+-
+-    -drop-tags &lt;regexp&gt;
+-           在写入 TS 或 XLIFF 文件时放弃命名的额外标记。
+-           可以反复指定。
+-
+-    -drop-translations
+-           放弃现有翻译并将状态重置为“未完成”。
+-           注意：这意味着 --no-obsolete。
+-
+-    -source-language &lt;language&gt;[_&lt;region&gt;]
+-           指定/重写 源字符串的语言。默认为
+-           POSIX，如果未指定并且文件尚未命名。
+-
+-    -target-language &lt;language&gt;[_&lt;region&gt;]
+-           指定/重写 翻译的语言。
+-           如果未指定此选项并且文件内容名称没有语言，
+-           则从文件名中猜出目标语言。
+-
+-    -no-obsolete
+-           放弃过时的消息。
+-
+-    -no-finished
+-           放弃完成的消息。
+-    -no-untranslated
+-           放弃为翻译的消息。
+-
+-    -sort-contexts
+-           按字母顺序对输出 TS 文件中的上下文进行排序。
+-
+-    -locations {absolute|relative|none}
+-           重写源代码引用如何保存在 TS 文件中。
+-           默认是 absolute。
+-
+-    -no-ui-lines
+-           从引用到 UI 文件中删除行号。
+-
+-    -verbose
+-           要更详细一点
+-
+-也可以只使用一个前导破折号指定长选项。
+-
+-返回值：
+-    0 成功
+-    1 命令行解析失败
+-    2 读取失败
+-    3 写入失败
+-</translation>
+-    </message>
+-</context>
+ <context>
+     <name>LRelease</name>
+-    <message>
+-        <source>Usage:
+-    lrelease [options] project-file
+-    lrelease [options] ts-files [-qm qm-file]
+-
+-lrelease is part of Qt&apos;s Linguist tool chain. It can be used as a
+-stand-alone tool to convert XML-based translations files in the TS
+-format into the &apos;compiled&apos; QM format used by QTranslator objects.
+-
+-Options:
+-    -help  Display this information and exit
+-    -idbased
+-           Use IDs instead of source strings for message keying
+-    -compress
+-           Compress the QM files
+-    -nounfinished
+-           Do not include unfinished translations
+-    -removeidentical
+-           If the translated text is the same as
+-           the source text, do not include the message
+-    -markuntranslated &lt;prefix&gt;
+-           If a message has no real translation, use the source text
+-           prefixed with the given string instead
+-    -silent
+-           Do not explain what is being done
+-    -version
+-           Display the version of lrelease and exit
+-</source>
+-        <translation>用法：
+-    lrelease [options] project-file
+-    lrelease [options] ts-files [-qm qm-file]
+-
+-lrelease 是 Qt 语言学工具链的一部分。它可以用作
+-用于在 TS 中转换基于 XML 的翻译文件的独立工具
+-格式化为 QTranslator 对象使用的“已编译” QM 格式。
+-
+-选项：
+-    -help  显示此信息并退出
+-    -idbased
+-           使用 ID 而不是源字符串进行消息键控
+-    -compress
+-           压缩 QM 文件
+-    -nounfinished
+-           不包括未完成的翻译
+-    -removeidentical
+-           如果翻译的文本与
+-           源文本相同，不包括该消息
+-    -markuntranslated &lt;prefix&gt;
+-           如果消息没有实际翻译，使用
+-           前缀为给定字符串的源文本
+-    -silent
+-           不显示正在做什么
+-    -version
+-           显示 lrelease 的版本并退出
+-</translation>
+-    </message>
+-    <message>
+-        <source>lrelease error: %1</source>
+-        <translation>lrelease 错误：%1</translation>
+-    </message>
+-    <message>
+-        <source>Updating &apos;%1&apos;...
+-</source>
+-        <translation>正在更新 &quot;%1&quot;...
+-</translation>
+-    </message>
+-    <message>
+-        <source>Removing translations equal to source text in &apos;%1&apos;...
+-</source>
+-        <translation>移除等于 &quot;%1&quot; 中源文本的翻译...
+-</translation>
+-    </message>
+-    <message>
+-        <source>lrelease error: cannot create &apos;%1&apos;: %2
+-</source>
+-        <translation>lrelease 错误：无法创建 &quot;%1&quot;:%2
+-</translation>
+-    </message>
+-    <message>
+-        <source>lrelease error: cannot save &apos;%1&apos;: %2</source>
+-        <translation>lrelease 错误：无法保存 &quot;%1&quot;:%2</translation>
+-    </message>
+-    <message>
+-        <source>lrelease version %1
+-</source>
+-        <translation>lrelease 版本 %1
+-</translation>
+-    </message>
+-    <message>
+-        <source>lrelease error: cannot process project file &apos;%1&apos;.
+-</source>
+-        <translation>lrelease 错误：无法处理项目文件 &quot;%1&quot;。
+-</translation>
+-    </message>
+-    <message>
+-        <source>lrelease warning: Met no &apos;TRANSLATIONS&apos; entry in project file &apos;%1&apos;
+-</source>
+-        <translation>lrelease 警告：在项目文件 &quot;%1&quot; 中没有遇到 &quot;翻译&quot; 条目
+-</translation>
+-    </message>
+     <message numerus="yes">
+         <source>Dropped %n message(s) which had no ID.</source>
+         <translation>
+@@ -606,664 +338,6 @@ lrelease 是 Qt 语言学工具链的一部分。它可以用作
+         </translation>
+     </message>
+ </context>
+-<context>
+-    <name>LUpdate</name>
+-    <message>
+-        <source>Parenthesis/bracket/brace mismatch between #if and #else branches; using #if branch
+-</source>
+-        <translation>#if 和 #else 分支之间的 圆括号/方括号/大括号 不匹配；使用 #if 分支
+-</translation>
+-    </message>
+-    <message>
+-        <source>Parenthesis/brace mismatch between #if and #else branches; using #if branch
+-</source>
+-        <translation>#if 和 #else 分支之间的 圆括号/大括号 不匹配；使用 #if 分支
+-</translation>
+-    </message>
+-    <message>
+-        <source>Unterminated C++ comment
+-</source>
+-        <translation>未终止的 C++ 注释
+-</translation>
+-    </message>
+-    <message>
+-        <source>Unterminated/mismatched C++ Raw string
+-</source>
+-        <translation>未终止/不匹配的 C++ Raw 字符串
+-</translation>
+-    </message>
+-    <message>
+-        <source>Unterminated C++ string
+-</source>
+-        <translation>未终止的 C++ 字符串
+-</translation>
+-    </message>
+-    <message>
+-        <source>Unterminated C++ character
+-</source>
+-        <translation>未终止的 C++ 字符
+-</translation>
+-    </message>
+-    <message>
+-        <source>Excess closing brace in C++ code (or abuse of the C++ preprocessor)
+-</source>
+-        <translation>C++ 代码中多余的右大括号（或滥用 C++ 预处理器）
+-</translation>
+-    </message>
+-    <message>
+-        <source>Excess closing parenthesis in C++ code (or abuse of the C++ preprocessor)
+-</source>
+-        <translation>C++ 代码中多余的右圆括号（或滥用 C++ 预处理器）
+-</translation>
+-    </message>
+-    <message>
+-        <source>Excess closing bracket in C++ code (or abuse of the C++ preprocessor)
+-</source>
+-        <translation>C++ 代码中多余的右方括号（或滥用 C++ 预处理器）
+-</translation>
+-    </message>
+-    <message>
+-        <source>Cannot open %1: %2
+-</source>
+-        <translation>无法打开 %1: %2
+-</translation>
+-    </message>
+-    <message>
+-        <source>Unsupported encoding Latin1
+-</source>
+-        <translation>不支持的编码 Latin1
+-</translation>
+-    </message>
+-    <message>
+-        <source>//% cannot be used with tr() / QT_TR_NOOP(). Ignoring
+-</source>
+-        <translation>//% 不能与 tr() / QT_TR_NOOP() 一起使用。忽略
+-</translation>
+-    </message>
+-    <message>
+-        <source>Qualifying with unknown namespace/class %1::%2
+-</source>
+-        <translation>使用未知 空间/类 %1::%2 进行限定
+-</translation>
+-    </message>
+-    <message>
+-        <source>tr() cannot be called without context
+-</source>
+-        <translation>tr() 不能在没有上下文的情况下调用
+-</translation>
+-    </message>
+-    <message>
+-        <source>Class &apos;%1&apos; lacks Q_OBJECT macro
+-</source>
+-        <translation>类 &quot;%1&quot; 缺少 Q_OBJECT 宏
+-</translation>
+-    </message>
+-    <message>
+-        <source>It is not recommended to call tr() from within a constructor &apos;%1::%2&apos;
+-</source>
+-        <translation>不建议从构造函数 &quot;%1::%2&quot; 中调用 tr()
+-</translation>
+-    </message>
+-    <message>
+-        <source>//% cannot be used with translate() / QT_TRANSLATE_NOOP(). Ignoring
+-</source>
+-        <translation>//% 不能与 translate() / QT_TRANSLATE_NOOP() 一起使用。忽略
+-</translation>
+-    </message>
+-    <message>
+-        <source>//= cannot be used with qtTrId() / QT_TRID_NOOP(). Ignoring
+-</source>
+-        <translation>//= 不能与 qtTrId() / QT_TRID_NOOP() 一起使用。忽略
+-</translation>
+-    </message>
+-    <message>
+-        <source>Ignoring definition of undeclared qualified class
+-</source>
+-        <translation>忽略未声明的限定类的定义
+-</translation>
+-    </message>
+-    <message>
+-        <source>Cannot invoke tr() like this
+-</source>
+-        <translation>无法像这样调用 tr()
+-</translation>
+-    </message>
+-    <message>
+-        <source>Discarding unconsumed meta data
+-</source>
+-        <translation>丢弃未使用的元数据
+-</translation>
+-    </message>
+-    <message>
+-        <source>Unbalanced opening brace in C++ code (or abuse of the C++ preprocessor)
+-</source>
+-        <translation>C++ 代码中的不平衡的左大括号（或滥用 C++ 预处理器）
+-</translation>
+-    </message>
+-    <message>
+-        <source>Unbalanced opening parenthesis in C++ code (or abuse of the C++ preprocessor)
+-</source>
+-        <translation>C++ 代码中的不平衡的左圆括号（或滥用 C++ 预处理器）
+-</translation>
+-    </message>
+-    <message>
+-        <source>Unbalanced opening bracket in C++ code (or abuse of the C++ preprocessor)
+-</source>
+-        <translation>C++ 代码中的不平衡的左方括号（或滥用 C++ 预处理器）
+-</translation>
+-    </message>
+-    <message>
+-        <source>Unexpected character in meta string
+-</source>
+-        <translation>元字符串中的意外字符
+-</translation>
+-    </message>
+-    <message>
+-        <source>Unterminated meta string
+-</source>
+-        <translation>未终止的元字符串
+-</translation>
+-    </message>
+-    <message>
+-        <source>Cannot open %1: %2</source>
+-        <translation>无法打开 %1: %2</translation>
+-    </message>
+-    <message>
+-        <source>Unterminated Java comment.
+-</source>
+-        <translation>未终止的 Java 注释。
+-</translation>
+-    </message>
+-    <message>
+-        <source>Invalid Unicode value.
+-</source>
+-        <translation>无效的 Unicode 值。
+-</translation>
+-    </message>
+-    <message>
+-        <source>Unterminated string.
+-</source>
+-        <translation>未终止的字符串。
+-</translation>
+-    </message>
+-    <message>
+-        <source>String used in translation can contain only literals concatenated with other literals, not expressions or numbers.
+-</source>
+-        <translation>翻译中使用的字符串只能包含与其他明文连接的明文，而不能包含表达式或数字。
+-</translation>
+-    </message>
+-    <message>
+-        <source>&apos;class&apos; must be followed by a class name.
+-</source>
+-        <translation>&quot;类&quot; 后面必须有一个类名。
+-</translation>
+-    </message>
+-    <message>
+-        <source>Excess closing brace.
+-</source>
+-        <translation>多余的右大括号。
+-</translation>
+-    </message>
+-    <message>
+-        <source>&apos;package&apos; must be followed by package name.
+-</source>
+-        <translation>&quot;包&quot; 后面必须有包名称。
+-</translation>
+-    </message>
+-    <message>
+-        <source>Unbalanced opening brace.
+-</source>
+-        <translation>不平衡的左大括号。
+-</translation>
+-    </message>
+-    <message>
+-        <source>Unbalanced opening parenthesis.
+-</source>
+-        <translation>不平衡的左圆括号。
+-</translation>
+-    </message>
+-    <message>
+-        <source>Usage:
+-    lupdate [options] [project-file]...
+-    lupdate [options] [source-file|path|@lst-file]... -ts ts-files|@lst-file
+-
+-lupdate is part of Qt&apos;s Linguist tool chain. It extracts translatable
+-messages from Qt UI files, C++, Java and JavaScript/QtScript source code.
+-Extracted messages are stored in textual translation source files (typically
+-Qt TS XML). New and modified messages can be merged into existing TS files.
+-
+-Options:
+-    -help  Display this information and exit.
+-    -no-obsolete
+-           Drop all obsolete and vanished strings.
+-    -extensions &lt;ext&gt;[,&lt;ext&gt;]...
+-           Process files with the given extensions only.
+-           The extension list must be separated with commas, not with whitespace.
+-           Default: &apos;%1&apos;.
+-    -pluralonly
+-           Only include plural form messages.
+-    -silent
+-           Do not explain what is being done.
+-    -no-sort
+-           Do not sort contexts in TS files.
+-    -no-recursive
+-           Do not recursively scan directories.
+-    -recursive
+-           Recursively scan directories (default).
+-    -I &lt;includepath&gt; or -I&lt;includepath&gt;
+-           Additional location to look for include files.
+-           May be specified multiple times.
+-    -locations {absolute|relative|none}
+-           Specify/override how source code references are saved in TS files.
+-           Guessed from existing TS files if not specified.
+-           Default is absolute for new files.
+-    -no-ui-lines
+-           Do not record line numbers in references to UI files.
+-    -disable-heuristic {sametext|similartext|number}
+-           Disable the named merge heuristic. Can be specified multiple times.
+-    -pro &lt;filename&gt;
+-           Name of a .pro file. Useful for files with .pro file syntax but
+-           different file suffix. Projects are recursed into and merged.
+-    -pro-out &lt;directory&gt;
+-           Virtual output directory for processing subsequent .pro files.
+-    -pro-debug
+-           Trace processing .pro files. Specify twice for more verbosity.
+-    -source-language &lt;language&gt;[_&lt;region&gt;]
+-           Specify the language of the source strings for new files.
+-           Defaults to POSIX if not specified.
+-    -target-language &lt;language&gt;[_&lt;region&gt;]
+-           Specify the language of the translations for new files.
+-           Guessed from the file name if not specified.
+-    -tr-function-alias &lt;function&gt;{+=,=}&lt;alias&gt;[,&lt;function&gt;{+=,=}&lt;alias&gt;]...
+-           With +=, recognize &lt;alias&gt; as an alternative spelling of &lt;function&gt;.
+-           With  =, recognize &lt;alias&gt; as the only spelling of &lt;function&gt;.
+-           Available &lt;function&gt;s (with their currently defined aliases) are:
+-             %2
+-    -ts &lt;ts-file&gt;...
+-           Specify the output file(s). This will override the TRANSLATIONS.
+-    -version
+-           Display the version of lupdate and exit.
+-    @lst-file
+-           Read additional file names (one per line) or includepaths (one per
+-           line, and prefixed with -I) from lst-file.
+-</source>
+-        <translation>用法：
+-    lupdate [options] [project-file]...
+-    lupdate [options] [source-file|path|@lst-file]... -ts ts-files|@lst-file
+-
+-lupdate 是 Qt 语言学工具链的一部分。它提取可翻译
+-来自 Qt UI 文件，C++，Java 和 JavaScript/QtScript 源代码的消息。
+-提取的消息存储在文本翻译源文件中（通常是
+-Qt TS XML）。新的和修改的消息可以合并到现有的 TS 文件中。
+-
+-选项：
+-    -help  显示此信息并退出。
+-    -no-obsolete
+-           放弃所有过时和消失的字符串。
+-    -extensions &lt;ext&gt;[,&lt;ext&gt;]...
+-           仅处理具有给定扩展名的文件。
+-           扩展列表必须用逗号分隔，不能用空格分隔。
+-           默认值：&quot;%1&quot;。
+-    -pluralonly
+-           仅包括复数窗体消息。
+-    -silent
+-           不显示正在做什么。
+-    -no-sort
+-           不要对 TS 文件中的上下文进行排序。
+-    -no-recursive
+-           不要递归扫描以下目录。
+-    -recursive
+-           递归扫描以下目录（默认）。
+-    -I &lt;includepath&gt; 或 -I&lt;includepath&gt;
+-           要查找包含文件的其他位置。
+-           可以多次指定。
+-    -locations {absolute|relative|none}
+-           指定/重写 源代码引用在 TS 文件中的保存方式。
+-           默认值是 absolute。
+-    -no-ui-lines
+-           不要在引用 UI 文件时记录行号。
+-    -disable-heuristic {sametext|similartext|number}
+-           禁用命名合并启发式。可以多次指定。
+-    -pro &lt;filename&gt;
+-           .pro 文件的名称。对于 .pro 文件语法但不同后缀
+-           的文件很有用。项目被递归并合并。
+-    -pro-out &lt;directory&gt;
+-           用于处理后续 .pro 文件的虚拟输出目录。
+-    -pro-debug
+-           跟踪处理 .pro 文件。指定两次以获得更详细程度。
+-    -source-language &lt;language&gt;[_&lt;region&gt;]
+-           指定新文件的源字符串的语言。
+-           如果未指定，则默认为 POSIX。
+-    -target-language &lt;language&gt;[_&lt;region&gt;]
+-           指定新文件的翻译语言。
+-           如果未指定，则从文件名中猜出。
+-    -tr-function-alias &lt;function&gt;{+=,=}&lt;alias&gt;[,&lt;function&gt;{+=,=}&lt;alias&gt;]...
+-           使用 + =，将&lt;alias&gt;识别为&lt;function&gt;的替代拼写。
+-           使用 =，将&lt;alias&gt;识别为&lt;function&gt;的唯一拼写。
+-           可用的&lt;function&gt;（及其当前定义的别名）是：
+-             %2
+-    -ts &lt;ts-file&gt;...
+-           指定输出文件。这将覆盖 TRANSLATIONS。
+-    -version
+-           显示 lupdate 的版本并退出。
+-    @lst-file
+-           从 lst-file 中读取其他文件名（每行一个）
+-           或包含路径（每行一个，前缀为 -I）。
+-</translation>
+-    </message>
+-    <message>
+-        <source>tr-function mapping &apos;%1&apos; in -tr-function-alias is missing the &apos;=&apos;.
+-</source>
+-        <translation>-tr-function-alias 中的 tr-function 映射 &quot;%1&quot; 缺少 &quot;=&quot;。
+-</translation>
+-    </message>
+-    <message>
+-        <source>Unknown tr-function &apos;%1&apos; in -tr-function-alias option.
+-Available tr-functions are: %2</source>
+-        <translation>-tr-function-alias 选项中的未知 tr-function &quot;%1&quot;。
+-可用的 tr-functions 是：%2</translation>
+-    </message>
+-    <message>
+-        <source>Empty alias for tr-function &apos;%1&apos; in -tr-function-alias option.
+-</source>
+-        <translation>-tr-function-alias 选项中 tr-function &quot;%1&quot; 的空别名。
+-</translation>
+-    </message>
+-    <message>
+-        <source>lupdate warning: Message with id &apos;%1&apos; has no source.
+-</source>
+-        <translation>lupdate 警告：id 为 &quot;%1&quot; 的消息没有源。
+-</translation>
+-    </message>
+-    <message>
+-        <source>lupdate warning: Specified target language &apos;%1&apos; disagrees with existing file&apos;s language &apos;%2&apos;. Ignoring.
+-</source>
+-        <translation>lupdate 警告：指定的目标语言 &quot;%1&quot; 与现有文件的语言 &quot;%2&quot; 不一致。忽略。
+-</translation>
+-    </message>
+-    <message>
+-        <source>lupdate warning: Specified source language &apos;%1&apos; disagrees with existing file&apos;s language &apos;%2&apos;. Ignoring.
+-</source>
+-        <translation>lupdate 警告：指定的源语言 &quot;%1&quot; 与现有文件的语言 &quot;%2&quot; 不一致。忽略。
+-</translation>
+-    </message>
+-    <message>
+-        <source>File %1 won&apos;t be updated: it contains translation but the target language is not recognized
+-</source>
+-        <translation>文件 %1 将不更新：它包含翻译，但目标语言无法识别
+-</translation>
+-    </message>
+-    <message>
+-        <source>Updating &apos;%1&apos;...
+-</source>
+-        <translation>正在更新 &quot;%1&quot;...
+-</translation>
+-    </message>
+-    <message>
+-        <source>Stripping non plural forms in &apos;%1&apos;...
+-</source>
+-        <translation>在 &quot;%1&quot; 中剥离非复数形式...
+-</translation>
+-    </message>
+-    <message>
+-        <source>lupdate error: Can not read %1: %2
+-</source>
+-        <translation>lupdate 错误：无法读取 %1: %2
+-</translation>
+-    </message>
+-    <message>
+-        <source>unexpected &lt;%1&gt; tag
+-</source>
+-        <translation>异常的&lt;%1&gt;标记
+-</translation>
+-    </message>
+-    <message>
+-        <source>unexpected closing &lt;%1&gt; tag
+-</source>
+-        <translation>异常的关闭&lt;%1&gt;标记
+-</translation>
+-    </message>
+-    <message>
+-        <source>lupdate error: %1:%2: %3
+-</source>
+-        <translation>lupdate 错误：%1:%2: %3
+-</translation>
+-    </message>
+-    <message>
+-        <source>lupdate warning: Some files have been ignored due to missing qml/javascript support
+-</source>
+-        <translation>lupdate 警告：由于缺少 qml/javascript 支持，某些文件已被忽略
+-</translation>
+-    </message>
+-    <message>
+-        <source>lupdate warning: Codec for source &apos;%1&apos; is invalid. Falling back to UTF-8.
+-</source>
+-        <translation>lupdate 警告：源 &quot;%1&quot; 的编解码无效。又回到了 UTF-8。
+-</translation>
+-    </message>
+-    <message>
+-        <source>lupdate warning: TS files from command line will override TRANSLATIONS in %1.
+-</source>
+-        <translation>lupdate 警告：命令行中的 TS 文件将覆盖 %1 中的 &quot;TRANSLATIONS&quot;。
+-</translation>
+-    </message>
+-    <message>
+-        <source>lupdate warning: TS files from command line prevent recursing into %1.
+-</source>
+-        <translation>lupdate 警告：来自命令行的 TS 文件阻止递归到 %1。
+-</translation>
+-    </message>
+-    <message>
+-        <source>lupdate warning: no TS files specified. Only diagnostics will be produced for &apos;%1&apos;.
+-</source>
+-        <translation>lupdate 警告：没有指定 TS 文件。仅为 &quot;%1&quot; 生成诊断。
+-</translation>
+-    </message>
+-    <message>
+-        <source>The option -target-language requires a parameter.
+-</source>
+-        <translation>选项 -target-language 需要一个参数。
+-</translation>
+-    </message>
+-    <message>
+-        <source>The option -source-language requires a parameter.
+-</source>
+-        <translation>选项 -source-language 需要一个参数。
+-</translation>
+-    </message>
+-    <message>
+-        <source>The option -disable-heuristic requires a parameter.
+-</source>
+-        <translation>选项 -disable-heuristic 需要一个参数。
+-</translation>
+-    </message>
+-    <message>
+-        <source>Invalid heuristic name passed to -disable-heuristic.
+-</source>
+-        <translation>无效的启发式名称传递给 -disable-heuristic。
+-</translation>
+-    </message>
+-    <message>
+-        <source>The option -locations requires a parameter.
+-</source>
+-        <translation>选项 -locations 需要一个参数。
+-</translation>
+-    </message>
+-    <message>
+-        <source>Invalid parameter passed to -locations.
+-</source>
+-        <translation>传递给 -locations 的参数无效。
+-</translation>
+-    </message>
+-    <message>
+-        <source>lupdate version %1
+-</source>
+-        <translation>lupdate 版本 %1
+-</translation>
+-    </message>
+-    <message>
+-        <source>The -extensions option should be followed by an extension list.
+-</source>
+-        <translation>-extensions 选项后面应该有一个扩展名列表。
+-</translation>
+-    </message>
+-    <message>
+-        <source>The -tr-function-alias option should be followed by a list of function=alias mappings.
+-</source>
+-        <translation>-tr-function-alias 选项后面应该跟一个 function=alias 映射列表。
+-</translation>
+-    </message>
+-    <message>
+-        <source>The -pro option should be followed by a filename of .pro file.
+-</source>
+-        <translation>-pro 选项后面应该跟 .pro 文件的文件名。
+-</translation>
+-    </message>
+-    <message>
+-        <source>The -pro-out option should be followed by a directory name.
+-</source>
+-        <translation>-pro-out 选项后面应该跟一个目录名。
+-</translation>
+-    </message>
+-    <message>
+-        <source>The -I option should be followed by a path.
+-</source>
+-        <translation>-I 选项后面应该跟一个路径。
+-</translation>
+-    </message>
+-    <message>
+-        <source>Unrecognized option &apos;%1&apos;.
+-</source>
+-        <translation>无法识别的选项 &quot;%1&quot;。
+-</translation>
+-    </message>
+-    <message>
+-        <source>lupdate error: List file &apos;%1&apos; is not readable.
+-</source>
+-        <translation>lupdate 错误：列表文件 &quot;%1&quot; 不可读。
+-</translation>
+-    </message>
+-    <message>
+-        <source>lupdate warning: For some reason, &apos;%1&apos; is not writable.
+-</source>
+-        <translation>lupdate 警告：由于某种原因，&quot;%1&quot; 不可写。
+-</translation>
+-    </message>
+-    <message>
+-        <source>lupdate error: File &apos;%1&apos; has no recognized extension.
+-</source>
+-        <translation>lupdate 错误：文件 apos;%1apos; 没有可识别的扩展名。
+-</translation>
+-    </message>
+-    <message>
+-        <source>lupdate error: File &apos;%1&apos; does not exist.
+-</source>
+-        <translation>lupdate 错误：文件 apos;%1apos; 不存在。
+-</translation>
+-    </message>
+-    <message>
+-        <source>Scanning directory &apos;%1&apos;...
+-</source>
+-        <translation>扫描目录 &quot;%1&quot;...
+-</translation>
+-    </message>
+-    <message>
+-        <source>lupdate warning: -target-language usually only makes sense with exactly one TS file.
+-</source>
+-        <translation>lupdate 警告：-target-language 通常只对一个 TS 文件有意义。
+-</translation>
+-    </message>
+-    <message>
+-        <source>lupdate warning: no TS files specified. Only diagnostics will be produced.
+-</source>
+-        <translation>lupdate 警告：没有指定 TS 文件。只会生成诊断信息。
+-</translation>
+-    </message>
+-    <message>
+-        <source>lupdate error: Both project and source files / include paths specified.
+-</source>
+-        <translation>lupdate 错误：项目和源文件/包括指定的路径。
+-</translation>
+-    </message>
+-    <message numerus="yes">
+-        <source>    Found %n source text(s) (%1 new and %2 already existing)
+-</source>
+-        <translation>
+-            <numerusform>找到 %n 个源文本（新建的 %1 个，已存在的 %2 个）</numerusform>
+-        </translation>
+-    </message>
+-    <message numerus="yes">
+-        <source>    Removed %n obsolete entries
+-</source>
+-        <translation>
+-            <numerusform>已删除 %n 个过时条目</numerusform>
+-        </translation>
+-    </message>
+-    <message numerus="yes">
+-        <source>    Kept %n obsolete entries
+-</source>
+-        <translation>
+-            <numerusform>保留 %n 个过时的条目</numerusform>
+-        </translation>
+-    </message>
+-    <message numerus="yes">
+-        <source>    Number heuristic provided %n translation(s)
+-</source>
+-        <translation>
+-            <numerusform>数字启发式提供 %n 个翻译</numerusform>
+-        </translation>
+-    </message>
+-    <message numerus="yes">
+-        <source>    Same-text heuristic provided %n translation(s)
+-</source>
+-        <translation>
+-            <numerusform>Same-text 启发式提供 %n 个翻译</numerusform>
+-        </translation>
+-    </message>
+-    <message numerus="yes">
+-        <source>    Similar-text heuristic provided %n translation(s)
+-</source>
+-        <translation>
+-            <numerusform>Similar-text 启发式提供 %n 个翻译</numerusform>
+-        </translation>
+-    </message>
+-    <message>
+-        <source>%1() requires at least one argument.
+-</source>
+-        <translation>%1() 至少需要一个参数。
+-</translation>
+-    </message>
+-    <message>
+-        <source>//% cannot be used with %1(). Ignoring
+-</source>
+-        <translation>//% 不能与 %1() 一起使用。忽略
+-</translation>
+-    </message>
+-    <message>
+-        <source>%1() requires at least two arguments.
+-</source>
+-        <translation>%1() 至少需要两个参数。
+-</translation>
+-    </message>
+-    <message>
+-        <source>//= cannot be used with %1(). Ignoring
+-</source>
+-        <translation>//= 不能与 %1() 一起使用。忽略
+-</translation>
+-    </message>
+-    <message>
+-        <source>Maximum statement or expression depth exceeded</source>
+-        <translation>超出最大语句或表达式深度</translation>
+-    </message>
+-    <message>
+-        <source>XML error: Parse error at line %1, column %2 (%3).</source>
+-        <translation>XML 错误：在行 %1，列 %2（%3）处解析错误。</translation>
+-    </message>
+-    <message>
+-        <source>Parse error in UI file</source>
+-        <translation>UI 文件中的解析错误</translation>
+-    </message>
+-</context>
+ <context>
+     <name>MainWindow</name>
+     <message>
+diff --git a/translations/qtbase_zh_CN.ts b/translations/qtbase_zh_CN.ts
+index 910f1d3..b0a89e2 100644
+--- a/translations/qtbase_zh_CN.ts
++++ b/translations/qtbase_zh_CN.ts
+@@ -5211,6 +5211,14 @@ Please turn one of those options off.</source>
+         <source>Launch (F)</source>
+         <translation>启动 (F)</translation>
+     </message>
++    <message>
++        <source>Launch (G)</source>
++        <translation type="unfinished"></translation>
++    </message>
++    <message>
++        <source>Launch (H)</source>
++        <translation type="unfinished"></translation>
++    </message>
+     <message>
+         <source>Monitor Brightness Up</source>
+         <translation>监视器亮度增高</translation>
+@@ -5315,6 +5323,10 @@ Please turn one of those options off.</source>
+         <source>Calculator</source>
+         <translation>计算器</translation>
+     </message>
++    <message>
++        <source>Calendar</source>
++        <translation type="unfinished"></translation>
++    </message>
+     <message>
+         <source>Clear</source>
+         <translation>清除</translation>
+@@ -5327,6 +5339,10 @@ Please turn one of those options off.</source>
+         <source>Close</source>
+         <translation>关闭</translation>
+     </message>
++    <message>
++        <source>Adjust contrast</source>
++        <translation type="unfinished"></translation>
++    </message>
+     <message>
+         <source>Copy</source>
+         <translation>复制</translation>
+@@ -5379,6 +5395,10 @@ Please turn one of those options off.</source>
+         <source>Meeting</source>
+         <translation>会议</translation>
+     </message>
++    <message>
++        <source>Memo</source>
++        <translation type="unfinished"></translation>
++    </message>
+     <message>
+         <source>Keyboard Menu</source>
+         <translation>键盘菜单</translation>
+@@ -5459,6 +5479,10 @@ Please turn one of those options off.</source>
+         <source>Terminal</source>
+         <translation>终端</translation>
+     </message>
++    <message>
++        <source>To-do list</source>
++        <translation type="unfinished"></translation>
++    </message>
+     <message>
+         <source>Tools</source>
+         <translation>工具</translation>
+@@ -7236,8 +7260,12 @@ The minimum Direct2D version required is %1. The Direct2D version on this system
+         <translation>需要字符数据。</translation>
+     </message>
+     <message>
+-        <source>Recursive entity detected.</source>
+-        <translation>检测到嵌套实体。</translation>
++        <source>Self-referencing entity detected.</source>
++        <translation type="unfinished"></translation>
++    </message>
++    <message>
++        <source>Entity expands to more characters than the entity expansion limit.</source>
++        <translation type="unfinished"></translation>
+     </message>
+     <message>
+         <source>Start tag expected.</source>
+diff --git a/translations/qtconnectivity_zh_CN.ts b/translations/qtconnectivity_zh_CN.ts
+index 0ed0e6c..c33d1fa 100644
+--- a/translations/qtconnectivity_zh_CN.ts
++++ b/translations/qtconnectivity_zh_CN.ts
+@@ -1,362 +1,6 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <!DOCTYPE TS>
+ <TS version="2.1" language="zh_CN">
+-<context>
+-    <name>BluetoothAlarmDialog</name>
+-    <message>
+-        <source>This application cannot be used without Bluetooth. Please switch Bluetooth ON to continue.</source>
+-        <translation>如果没有蓝牙，则无法使用此应用程序。请打开蓝牙以继续。</translation>
+-    </message>
+-    <message>
+-        <source>Quit</source>
+-        <translation>退出</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>BtLocalDevice</name>
+-    <message>
+-        <source>Bt Chat Server</source>
+-        <translation>Bt Chat Server</translation>
+-    </message>
+-    <message>
+-        <source>Example bluetooth chat server</source>
+-        <translation>Example bluetooth chat server</translation>
+-    </message>
+-    <message>
+-        <source>qt-project.org</source>
+-        <translation>qt-project.org</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>Chat</name>
+-    <message>
+-        <source>Bluetooth Chat</source>
+-        <translation>蓝牙聊天</translation>
+-    </message>
+-    <message>
+-        <source>Local Bluetooth Adapter</source>
+-        <translation>本地蓝牙适配器</translation>
+-    </message>
+-    <message>
+-        <source>Default</source>
+-        <translation>默认</translation>
+-    </message>
+-    <message>
+-        <source>Send</source>
+-        <translation>发送</translation>
+-    </message>
+-    <message>
+-        <source>Connect</source>
+-        <translation>连接</translation>
+-    </message>
+-    <message>
+-        <source>Quit</source>
+-        <translation>退出</translation>
+-    </message>
+-    <message>
+-        <source>Default (%1)</source>
+-        <comment>%1 = Bluetooth address</comment>
+-        <translation>默认（%1）</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>ChatServer</name>
+-    <message>
+-        <source>Bt Chat Server</source>
+-        <translation>Bt Chat Server</translation>
+-    </message>
+-    <message>
+-        <source>Example bluetooth chat server</source>
+-        <translation>Example bluetooth chat server</translation>
+-    </message>
+-    <message>
+-        <source>qt-project.org</source>
+-        <translation>qt-project.org</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>Connect</name>
+-    <message>
+-        <source>FOUND DEVICES</source>
+-        <translation>发现设备</translation>
+-    </message>
+-    <message>
+-        <source>Public Address</source>
+-        <translation>公用地址</translation>
+-    </message>
+-    <message>
+-        <source>Random Address</source>
+-        <translation>随机地址</translation>
+-    </message>
+-    <message>
+-        <source>START SEARCH</source>
+-        <translation>开始搜索</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>DeviceDiscovery</name>
+-    <message>
+-        <source>Bluetooth Scanner</source>
+-        <translation>蓝牙扫描</translation>
+-    </message>
+-    <message>
+-        <source>Local Device</source>
+-        <translation>本地设备</translation>
+-    </message>
+-    <message>
+-        <source>Bluetooth Powered On</source>
+-        <translation>蓝牙已打开</translation>
+-    </message>
+-    <message>
+-        <source>Discoverable</source>
+-        <translation>可发现</translation>
+-    </message>
+-    <message>
+-        <source>General Unlimited Inquiry</source>
+-        <translation>一般无限查询</translation>
+-    </message>
+-    <message>
+-        <source>Scan</source>
+-        <translation>扫描</translation>
+-    </message>
+-    <message>
+-        <source>Clear</source>
+-        <translation>清除</translation>
+-    </message>
+-    <message>
+-        <source>Quit</source>
+-        <translation>退出</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>DeviceFinder</name>
+-    <message>
+-        <source>Scanning for devices...</source>
+-        <translation>扫描设备…</translation>
+-    </message>
+-    <message>
+-        <source>Low Energy device found. Scanning more...</source>
+-        <translation>找到低能耗设备。扫描更多...</translation>
+-    </message>
+-    <message>
+-        <source>The Bluetooth adaptor is powered off.</source>
+-        <translation>蓝牙适配器已关闭。</translation>
+-    </message>
+-    <message>
+-        <source>Writing or reading from the device resulted in an error.</source>
+-        <translation>写入或读取设备导致错误。</translation>
+-    </message>
+-    <message>
+-        <source>An unknown error has occurred.</source>
+-        <translation>发生未知错误。</translation>
+-    </message>
+-    <message>
+-        <source>No Low Energy devices found.</source>
+-        <translation>未找到低能耗设备。</translation>
+-    </message>
+-    <message>
+-        <source>Scanning done.</source>
+-        <translation>扫描完成。</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>DeviceHandler</name>
+-    <message>
+-        <source>Demo device connected.</source>
+-        <translation>演示设备已连接。</translation>
+-    </message>
+-    <message>
+-        <source>Discovering services...</source>
+-        <translation>正在发现服务…</translation>
+-    </message>
+-    <message>
+-        <source>Service discovered.</source>
+-        <translation>发现服务。</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>EmptyRecordLabel</name>
+-    <message>
+-        <source>Empty Record</source>
+-        <translation>空记录</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>MainWindow</name>
+-    <message>
+-        <source>MainWindow</source>
+-        <translation>主窗口</translation>
+-    </message>
+-    <message>
+-        <source>Touch a tag</source>
+-        <translation>触摸标签</translation>
+-    </message>
+-    <message>
+-        <source>NDEF Message Editor</source>
+-        <translation>NDEF 消息编辑器</translation>
+-    </message>
+-    <message>
+-        <source>Retrieve</source>
+-        <translation>检索</translation>
+-    </message>
+-    <message>
+-        <source>Store</source>
+-        <translation>存储</translation>
+-    </message>
+-    <message>
+-        <source>Load</source>
+-        <translation>加载</translation>
+-    </message>
+-    <message>
+-        <source>Save</source>
+-        <translation>保存</translation>
+-    </message>
+-    <message>
+-        <source>Clear</source>
+-        <translation>清除</translation>
+-    </message>
+-    <message>
+-        <source>Add</source>
+-        <translation>添加</translation>
+-    </message>
+-    <message>
+-        <source>NFC Text Record</source>
+-        <translation>NFC 文本记录</translation>
+-    </message>
+-    <message>
+-        <source>NFC URI Record</source>
+-        <translation>NFC URI 记录</translation>
+-    </message>
+-    <message>
+-        <source>MIME Image Record</source>
+-        <translation>MIME 图像记录</translation>
+-    </message>
+-    <message>
+-        <source>Empty Record</source>
+-        <translation>空记录</translation>
+-    </message>
+-    <message>
+-        <source>Select NDEF Message</source>
+-        <translation>选择 NDEF 消息</translation>
+-    </message>
+-    <message>
+-        <source>Unsupported tag</source>
+-        <translation>不支持的标签</translation>
+-    </message>
+-    <message>
+-        <source>Tag removed from field</source>
+-        <translation>从字段中删除的标记</translation>
+-    </message>
+-    <message>
+-        <source>No response from tag</source>
+-        <translation>标签无响应</translation>
+-    </message>
+-    <message>
+-        <source>Checksum mismatch</source>
+-        <translation>校验和不匹配</translation>
+-    </message>
+-    <message>
+-        <source>Invalid parameters</source>
+-        <translation>无效参数</translation>
+-    </message>
+-    <message>
+-        <source>NDEF read error</source>
+-        <translation>NDEF 读错误</translation>
+-    </message>
+-    <message>
+-        <source>NDEF write error</source>
+-        <translation>NDEF 写错误</translation>
+-    </message>
+-    <message>
+-        <source>Unknown error</source>
+-        <translation>未知错误</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>Measure</name>
+-    <message>
+-        <source>Relax!
+-When you are ready, press Start. You have %1s time to increase heartrate so much as possible.
+-Good luck!</source>
+-        <translation>放轻松！
+-准备好后，按开始。有 %1 秒时间尽可能提高心率。
+-祝好运！</translation>
+-    </message>
+-    <message>
+-        <source>START</source>
+-        <translation>开始</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>MimeImageRecordEditor</name>
+-    <message>
+-        <source>Form</source>
+-        <translation>窗体</translation>
+-    </message>
+-    <message>
+-        <source>MIME Record &lt;image/*&gt;</source>
+-        <translation>MIME 记录 &lt;image/*&gt;</translation>
+-    </message>
+-    <message>
+-        <source>Type:</source>
+-        <translation>类型：</translation>
+-    </message>
+-    <message>
+-        <source>image/</source>
+-        <translation>image/</translation>
+-    </message>
+-    <message>
+-        <source>File:</source>
+-        <translation>文件：</translation>
+-    </message>
+-    <message>
+-        <source>...</source>
+-        <translation></translation>
+-    </message>
+-    <message>
+-        <source>TextLabel</source>
+-        <translation>文本标签</translation>
+-    </message>
+-    <message>
+-        <source>Select Image File</source>
+-        <translation>选择图像文件</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>Progress</name>
+-    <message>
+-        <source>Transfer Progress</source>
+-        <translation>传输进度</translation>
+-    </message>
+-    <message>
+-        <source>Filename</source>
+-        <translation>文件名</translation>
+-    </message>
+-    <message>
+-        <source>Status</source>
+-        <translation>状态</translation>
+-    </message>
+-    <message>
+-        <source>Cancel</source>
+-        <translation>取消</translation>
+-    </message>
+-    <message>
+-        <source>Failed: %1</source>
+-        <translation>失败：%1</translation>
+-    </message>
+-    <message>
+-        <source>Transfer complete</source>
+-        <translation>传输完成</translation>
+-    </message>
+-    <message>
+-        <source>Dismiss</source>
+-        <translation>解除</translation>
+-    </message>
+-    <message>
+-        <source>Transferring...ETA: %1s</source>
+-        <translation>正在传输…预计时间：%1 秒</translation>
+-    </message>
+-</context>
+ <context>
+     <name>QBluetoothDeviceDiscoveryAgent</name>
+     <message>
+@@ -411,6 +55,10 @@ Good luck!</source>
+         <source>Missing Location permission. Search is not possible.</source>
+         <translation>缺少位置权限。无法搜索。</translation>
+     </message>
++    <message>
++        <source>Location service turned off. Search is not possible.</source>
++        <translation type="unfinished"></translation>
++    </message>
+     <message>
+         <source>Classic Discovery cannot be started</source>
+         <translation>无法启动经典发现</translation>
+@@ -1822,199 +1470,4 @@ Good luck!</source>
+         <translation>远程设备已关闭连接</translation>
+     </message>
+ </context>
+-<context>
+-    <name>RemoteSelector</name>
+-    <message>
+-        <source>Available chat services</source>
+-        <translation>可用的聊天服务</translation>
+-    </message>
+-    <message>
+-        <source>Scanning...</source>
+-        <translation>正在扫描...</translation>
+-    </message>
+-    <message>
+-        <source>Cancel</source>
+-        <translation>取消</translation>
+-    </message>
+-    <message>
+-        <source>Select the chat service to connect to.</source>
+-        <translation>选择要连接的聊天服务。</translation>
+-    </message>
+-    <message>
+-        <source>Available file transfer services</source>
+-        <translation>可用的文件传输服务</translation>
+-    </message>
+-    <message>
+-        <source>Select File</source>
+-        <translation>选择文件</translation>
+-    </message>
+-    <message>
+-        <source>Send</source>
+-        <translation>发送</translation>
+-    </message>
+-    <message>
+-        <source>TextLabel</source>
+-        <translation>文本标签</translation>
+-    </message>
+-    <message>
+-        <source>Stop</source>
+-        <translation>停止</translation>
+-    </message>
+-    <message>
+-        <source>Refresh</source>
+-        <translation>刷新</translation>
+-    </message>
+-    <message>
+-        <source>Test</source>
+-        <translation>测试</translation>
+-    </message>
+-    <message>
+-        <source>MAC Address</source>
+-        <translation>MAC 地址</translation>
+-    </message>
+-    <message>
+-        <source>Device Name</source>
+-        <translation>设备名称</translation>
+-    </message>
+-    <message>
+-        <source>Device Service</source>
+-        <translation>设备服务</translation>
+-    </message>
+-    <message>
+-        <source>Paired</source>
+-        <translation>配对</translation>
+-    </message>
+-    <message>
+-        <source>Authorized</source>
+-        <translation>授权</translation>
+-    </message>
+-    <message>
+-        <source>Cannot find remote services.</source>
+-        <translation>找不到远程服务。</translation>
+-    </message>
+-    <message>
+-        <source>Select the device to send to.</source>
+-        <translation>选择要发送到的设备。</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>Search</name>
+-    <message>
+-        <source>Searching for chat service...</source>
+-        <translation>正在搜索聊天服务…</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>ServiceDiscovery</name>
+-    <message>
+-        <source>Available Services</source>
+-        <translation>可用的服务</translation>
+-    </message>
+-    <message>
+-        <source>Querying...</source>
+-        <translation>查询…</translation>
+-    </message>
+-    <message>
+-        <source>Close</source>
+-        <translation>关闭</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>Stats</name>
+-    <message>
+-        <source>RESULT</source>
+-        <translation>结果</translation>
+-    </message>
+-    <message>
+-        <source>MIN</source>
+-        <translation>最小</translation>
+-    </message>
+-    <message>
+-        <source>MAX</source>
+-        <translation>最大</translation>
+-    </message>
+-    <message>
+-        <source>AVG</source>
+-        <translation>平均</translation>
+-    </message>
+-    <message>
+-        <source>CALORIES</source>
+-        <translation>卡路里</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>TextRecordEditor</name>
+-    <message>
+-        <source>Form</source>
+-        <translation>窗体</translation>
+-    </message>
+-    <message>
+-        <source>NFC Text Record</source>
+-        <translation>NFC 文本记录</translation>
+-    </message>
+-    <message>
+-        <source>Text:</source>
+-        <translation>文本：</translation>
+-    </message>
+-    <message>
+-        <source>Locale:</source>
+-        <translation>区域设置：</translation>
+-    </message>
+-    <message>
+-        <source>Encoding:</source>
+-        <translation>编码：</translation>
+-    </message>
+-    <message>
+-        <source>UTF-8</source>
+-        <translation>UTF-8</translation>
+-    </message>
+-    <message>
+-        <source>UTF-16</source>
+-        <translation>UTF-16</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>UnknownRecordLabel</name>
+-    <message>
+-        <source>Unknown Record Type</source>
+-        <translation>未知记录类型</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>UriRecordEditor</name>
+-    <message>
+-        <source>Form</source>
+-        <translation>窗体</translation>
+-    </message>
+-    <message>
+-        <source>NFC URI Record</source>
+-        <translation>NFC URI 记录</translation>
+-    </message>
+-    <message>
+-        <source>Uri:</source>
+-        <translation>Uri:</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>main</name>
+-    <message>
+-        <source>HeartRateGame</source>
+-        <translation>HeartRateGame</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>pinDisplay</name>
+-    <message>
+-        <source>Enter Pin Code</source>
+-        <translation>输入 PIN 码</translation>
+-    </message>
+-    <message>
+-        <source>012345</source>
+-        <translation>012345</translation>
+-    </message>
+-    <message>
+-        <source>TextLabel</source>
+-        <translation>TextLabel</translation>
+-    </message>
+-</context>
+ </TS>
+diff --git a/translations/qtdeclarative_zh_CN.ts b/translations/qtdeclarative_zh_CN.ts
+index d1a7ce5..122cffb 100644
+--- a/translations/qtdeclarative_zh_CN.ts
++++ b/translations/qtdeclarative_zh_CN.ts
+@@ -1,165 +1,6 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <!DOCTYPE TS>
+ <TS version="2.1" language="zh_CN">
+-<context>
+-    <name></name>
+-    <message id="qtn_hello_world">
+-        <source></source>
+-        <translation></translation>
+-    </message>
+-</context>
+-<context>
+-    <name>Button</name>
+-    <message>
+-        <source>Play</source>
+-        <translation>播放</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>ContainerUser</name>
+-    <message>
+-        <source>Hello World</source>
+-        <translation>Hello World</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>CustomContext</name>
+-    <message>
+-        <source>goodbye</source>
+-        <translation>goodbye</translation>
+-    </message>
+-    <message>
+-        <source>see ya</source>
+-        <comment>informal &apos;goodbye&apos;</comment>
+-        <translation>see ya</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>ImportDialog</name>
+-    <message>
+-        <source>Import After Effects Curve</source>
+-        <translation>导入 After Effects 曲线</translation>
+-    </message>
+-    <message>
+-        <source>Input Influence:</source>
+-        <translation>输入影响：</translation>
+-    </message>
+-    <message>
+-        <source>Output Influence:</source>
+-        <translation>输出影响：</translation>
+-    </message>
+-    <message>
+-        <source>Output Slope:</source>
+-        <translation>输出斜率：</translation>
+-    </message>
+-    <message>
+-        <source>33</source>
+-        <translation>33</translation>
+-    </message>
+-    <message>
+-        <source>0</source>
+-        <translation>0</translation>
+-    </message>
+-    <message>
+-        <source>Input Slope:</source>
+-        <translation>输入斜率：</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>MainWindow</name>
+-    <message>
+-        <source>File</source>
+-        <translation>文件</translation>
+-    </message>
+-    <message>
+-        <source>Quit</source>
+-        <translation>退出</translation>
+-    </message>
+-    <message>
+-        <source>&amp;File</source>
+-        <translation>文件(&amp;F)</translation>
+-    </message>
+-    <message>
+-        <source>Grab framebuffer</source>
+-        <translation>抓取帧缓冲</translation>
+-    </message>
+-    <message>
+-        <source>Render to pixmap</source>
+-        <translation>渲染到像素图</translation>
+-    </message>
+-    <message>
+-        <source>Grab via grabToImage</source>
+-        <translation>通过 grabToImage 抓取</translation>
+-    </message>
+-    <message>
+-        <source>&amp;Window</source>
+-        <translation>窗口(&amp;W)</translation>
+-    </message>
+-    <message>
+-        <source>Add tab widget</source>
+-        <translation>添加标签小部件</translation>
+-    </message>
+-    <message>
+-        <source>Plain Quick content</source>
+-        <translation>简单快速的内容</translation>
+-    </message>
+-    <message>
+-        <source>Custom OpenGL drawing</source>
+-        <translation>自定义 OpenGL 绘图</translation>
+-    </message>
+-    <message>
+-        <source>Type</source>
+-        <translation>类型</translation>
+-    </message>
+-    <message>
+-        <source>QQuickView in a window container (direct)</source>
+-        <translation>QQuickView 在一个窗口容器中（直接）</translation>
+-    </message>
+-    <message>
+-        <source>QQuickWidget (indirect through framebuffer objects)</source>
+-        <translation>QQuickWidget（间接通过帧缓冲对象）</translation>
+-    </message>
+-    <message>
+-        <source>Multisample (4x)</source>
+-        <translation>多重采样（4x）</translation>
+-    </message>
+-    <message>
+-        <source>Show widget overlay</source>
+-        <translation>显示小部件层叠</translation>
+-    </message>
+-    <message>
+-        <source>Null</source>
+-        <translation>无(Null)</translation>
+-    </message>
+-    <message>
+-        <source>Ready</source>
+-        <translation>就绪</translation>
+-    </message>
+-    <message>
+-        <source>Loading</source>
+-        <translation>载入中</translation>
+-    </message>
+-    <message>
+-        <source>Error</source>
+-        <translation>错误</translation>
+-    </message>
+-    <message>
+-        <source>Unknown</source>
+-        <translation>未知</translation>
+-    </message>
+-    <message>
+-        <source>QQuickView status: %1</source>
+-        <translation>QQuickView 状态：%1</translation>
+-    </message>
+-    <message>
+-        <source>QQuickWidget status: %1</source>
+-        <translation>QQuickWidget 状态：%1</translation>
+-    </message>
+-    <message>
+-        <source>Scenegraph error %1: %2</source>
+-        <translation>场景图错误 %1：%2</translation>
+-    </message>
+-</context>
+ <context>
+     <name>Object</name>
+     <message>
+@@ -195,56 +36,6 @@
+         <translation>属性值设置多次</translation>
+     </message>
+ </context>
+-<context>
+-    <name>Pane</name>
+-    <message>
+-        <source>Form</source>
+-        <translation>窗体</translation>
+-    </message>
+-    <message>
+-        <source>p1</source>
+-        <translation>p1</translation>
+-    </message>
+-    <message>
+-        <source>x</source>
+-        <translation>x</translation>
+-    </message>
+-    <message>
+-        <source>y</source>
+-        <translation>y</translation>
+-    </message>
+-    <message>
+-        <source>smooth</source>
+-        <translation>平滑</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>Properties</name>
+-    <message>
+-        <source>Form</source>
+-        <translation>窗体</translation>
+-    </message>
+-    <message>
+-        <source>Duration</source>
+-        <translation>持续</translation>
+-    </message>
+-    <message>
+-        <source>Code</source>
+-        <translation>编码</translation>
+-    </message>
+-    <message>
+-        <source>Presets</source>
+-        <translation>预置</translation>
+-    </message>
+-    <message>
+-        <source>Control Points</source>
+-        <translation>控制点</translation>
+-    </message>
+-    <message>
+-        <source>Import AfterEffects Curve</source>
+-        <translation>导入 AfterEffects 曲线</translation>
+-    </message>
+-</context>
+ <context>
+     <name>QInputMethod</name>
+     <message>
+@@ -1143,6 +934,10 @@
+         <source>Invalid grouped property access</source>
+         <translation>无效的分组属性访问权限</translation>
+     </message>
++    <message>
++        <source>Invalid grouped property access: Property &quot;%1&quot; with primitive type &quot;%2&quot;.</source>
++        <translation type="unfinished"></translation>
++    </message>
+     <message>
+         <source>Invalid grouped property access: Property &quot;%1&quot; with type &quot;%2&quot;, which is not a value type</source>
+         <translation>无效的分组属性访问权限：属性“%1”类型为“%2”，不是值类型</translation>
+@@ -1280,8 +1075,12 @@
+         <translation>无法将对象分配给列表属性“%1”</translation>
+     </message>
+     <message>
+-        <source>Unexpected object assignment for property &quot;%1&quot;</source>
+-        <translation>属性“%1”的异常对象分配</translation>
++        <source>Can not assign value of type &quot;%1&quot; to property &quot;%2&quot;, expecting &quot;%3&quot;</source>
++        <translation type="unfinished"></translation>
++    </message>
++    <message>
++        <source>Can not assign value of type &quot;%1&quot; to property &quot;%2&quot;, expecting an object</source>
++        <translation type="unfinished"></translation>
+     </message>
+     <message>
+         <source>Invalid property assignment: script expected</source>
+@@ -1792,215 +1591,6 @@ Install a driver providing OpenGL 2.0 or higher, or, if this is not possible, ma
+         <translation>冲突的属性“visible”。和“visibility”</translation>
+     </message>
+ </context>
+-<context>
+-    <name>QTBUG-38492</name>
+-    <message>
+-        <source>Test</source>
+-        <translation>测试</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>QmlPreviewApplication</name>
+-    <message>
+-        <source>The QML Preview tool watches QML and JavaScript files on disk and updates
+-the application live with any changes. The application to be previewed
+-has to enable QML debugging. See the Qt Creator documentation on how to do
+-this for different Qt versions.</source>
+-        <translation>QML 预览工具在磁盘和更新上监视 QML 和 JavaScript 文件
+-应用程序可以随时更改。要预览的应用程序
+-必须启用 QML 调试。有关如何操作，请参阅 Qt Creator 文档
+-这适用于不同的 Qt 版本。</translation>
+-    </message>
+-    <message>
+-        <source>Print debugging output.</source>
+-        <translation>打印调试输出。</translation>
+-    </message>
+-    <message>
+-        <source>The program to be started and previewed.</source>
+-        <translation>要启动和预览的程序。</translation>
+-    </message>
+-    <message>
+-        <source>Parameters for the program to be started.</source>
+-        <translation>要启动的程序的参数。</translation>
+-    </message>
+-    <message>
+-        <source>You have to specify a program to start.</source>
+-        <translation>您必须指定要启动的程序。</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>QmlProfilerApplication</name>
+-    <message>
+-        <source>The QML Profiler retrieves QML tracing data from an application. The data
+-collected can then be visualized in Qt Creator. The application to be profiled
+-has to enable QML debugging. See the Qt Creator documentation on how to do
+-this for different Qt versions.</source>
+-        <translation>QML 分析器从应用程序中检索 QML 跟踪数据。数据
+-然后可以在 Qt Creator 中显示收集的内容。要分析的应用程序
+-必须启用 QML 调试。有关如何操作，请参阅 Qt Creator 文档
+-这适用于不同的 Qt 版本。</translation>
+-    </message>
+-    <message>
+-        <source>Attach to an application already running on &lt;hostname&gt;, instead of starting it locally.</source>
+-        <translation>附加到已在&lt;hostname&gt;上运行的应用程序，而不是在本地启动它。</translation>
+-    </message>
+-    <message>
+-        <source>Connect to the TCP port &lt;port&gt;. The default is 3768.</source>
+-        <translation>连接到 TCP 端口 &lt;port&gt;。默认值为 3768。</translation>
+-    </message>
+-    <message>
+-        <source>Save tracing data in &lt;file&gt;. By default the data is sent to the standard output.</source>
+-        <translation>将跟踪数据保存在 &lt;file&gt; 中。默认情况下，数据将发送到标准输出。</translation>
+-    </message>
+-    <message>
+-        <source>If set to &apos;off&apos;, don&apos;t immediately start recording data when the QML engine starts, but instead either start the recording interactively or with the JavaScript console.profile() function. By default the recording starts immediately.</source>
+-        <translation>如果设置为“关闭”，则在 QML 引擎启动时不立即开始记录数据，而是交互地或使用 JavaScript console.profile() 函数开始记录。默认情况下，记录立即开始。</translation>
+-    </message>
+-    <message>
+-        <source>Comma-separated list of features to record. By default all features supported by the QML engine are recorded. If --include is specified, only the given features will be recorded. The following features are unserstood by qmlprofiler: %1</source>
+-        <translation>以逗号分隔的要记录的要素列表。默认情况下，会记录 QML 引擎支持的所有功能。如果指定了 --include，则仅记录给定的功能。qmlprofiler：%1 无法理解以下功能</translation>
+-    </message>
+-    <message>
+-        <source>Comma-separated list of features to exclude when recording. By default all features supported by the QML engine are recorded. See --include for the features understood by qmlprofiler.</source>
+-        <translation>记录时要排除的以逗号分隔的要素列表。默认情况下，会记录 QML 引擎支持的所有功能。有关 qmlprofiler 理解的功能，请参阅 --include。</translation>
+-    </message>
+-    <message>
+-        <source>Manually control the recording from the command line. The profiler will not terminate itself when the application does so in this case.</source>
+-        <translation>从命令行手动控制记录。在这种情况下，当应用程序这样做时，分析器不会自行终止。</translation>
+-    </message>
+-    <message>
+-        <source>Print debugging output.</source>
+-        <translation>打印调试输出。</translation>
+-    </message>
+-    <message>
+-        <source>The program to be started and profiled.</source>
+-        <translation>要启动和分析的程序。</translation>
+-    </message>
+-    <message>
+-        <source>Parameters for the program to be started.</source>
+-        <translation>要启动的程序的参数。</translation>
+-    </message>
+-    <message>
+-        <source>&apos;%1&apos; is not a valid port.</source>
+-        <translation>“%1”不是有效的端口。</translation>
+-    </message>
+-    <message>
+-        <source>qmlprofiler can only process either --include or --exclude, not both.</source>
+-        <translation>qmlprofiler 只能处理 --include 或 --exclude，而不能同时处理两者。</translation>
+-    </message>
+-    <message>
+-        <source>You have to specify either --attach or a program to start.</source>
+-        <translation>您必须指定 --attach 或要启动的程序。</translation>
+-    </message>
+-    <message>
+-        <source>--attach cannot be used when starting a program.</source>
+-        <translation>启动程序时无法使用 --attach。</translation>
+-    </message>
+-    <message>
+-        <source>Unknown feature &apos;%1&apos;</source>
+-        <translation>未知功能‘%1’</translation>
+-    </message>
+-    <message>
+-        <source>No features remaining to record after processing --exclude.</source>
+-        <translation>处理 --exclude 后，没有剩余要记录的功能。</translation>
+-    </message>
+-    <message>
+-        <source>No features specified for --include.</source>
+-        <translation>没有为 --include 指定功能。</translation>
+-    </message>
+-    <message>
+-        <source>Data written to %1.</source>
+-        <translation>数据写入 %1。</translation>
+-    </message>
+-    <message>
+-        <source>Saving failed.</source>
+-        <translation>保存失败。</translation>
+-    </message>
+-    <message>
+-        <source>Saving failed</source>
+-        <translation>保存失败</translation>
+-    </message>
+-    <message>
+-        <source>Cannot overwrite %1.</source>
+-        <translation>无法覆盖 %1。</translation>
+-    </message>
+-    <message>
+-        <source>%1 exists. Overwrite (y/n)?</source>
+-        <translation>%1 存在。覆盖（y/n）？</translation>
+-    </message>
+-    <message>
+-        <source>Really quit (y/n)?</source>
+-        <translation>真的退出（y/n）？</translation>
+-    </message>
+-    <message>
+-        <source>The application is still generating data. Really quit (y/n)?</source>
+-        <translation>该应用程序仍在生成数据。真的退出（y/n）？</translation>
+-    </message>
+-    <message>
+-        <source>There is still trace data in memory. Really quit (y/n)?</source>
+-        <translation>内存中仍有跟踪数据。真的退出（y/n）？</translation>
+-    </message>
+-    <message>
+-        <source>Cannot output while recording data.</source>
+-        <translation>记录数据时无法输出。</translation>
+-    </message>
+-    <message>
+-        <source>No data was recorded so far.</source>
+-        <translation>到目前为止没有记录数据。</translation>
+-    </message>
+-    <message>
+-        <source>Cannot clear data while recording.</source>
+-        <translation>记录时无法清除数据。</translation>
+-    </message>
+-    <message>
+-        <source>Trace data cleared.</source>
+-        <translation>跟踪数据已清除。</translation>
+-    </message>
+-    <message>
+-        <source>Recording started</source>
+-        <translation>记录已开始</translation>
+-    </message>
+-    <message>
+-        <source>Application started recording</source>
+-        <translation>应用程序开始记录</translation>
+-    </message>
+-    <message>
+-        <source>Connected to %1. Wait for profile data or type a command (type &apos;help&apos; to show list of commands).
+-Recording Status: %2</source>
+-        <translation>已连接到 %1。等待配置文件数据或键入命令（键入&apos;help&apos;以显示命令列表）。记录状态：%2</translation>
+-    </message>
+-    <message>
+-        <source>on</source>
+-        <translation>开</translation>
+-    </message>
+-    <message>
+-        <source>off</source>
+-        <translation>关</translation>
+-    </message>
+-    <message>
+-        <source>Recording stopped.</source>
+-        <translation>记录已停止。</translation>
+-    </message>
+-    <message>
+-        <source>Application stopped recording.</source>
+-        <translation>应用程序停止记录。</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>QmlProfilerData</name>
+-    <message>
+-        <source>Could not open %1 for writing</source>
+-        <translation>无法打开 %1 进行写入</translation>
+-    </message>
+-    <message>
+-        <source>Could not open stdout for writing</source>
+-        <translation>无法打开 stdout 进行写入</translation>
+-    </message>
+-    <message>
+-        <source>No data to save</source>
+-        <translation>没有要保存的数据</translation>
+-    </message>
+-</context>
+ <context>
+     <name>SignalHandlerConverter</name>
+     <message>
+@@ -2047,129 +1637,6 @@ Recording Status: %2</source>
+         <translation>SignalTransition：预期是脚本</translation>
+     </message>
+ </context>
+-<context>
+-    <name>SplineEditor</name>
+-    <message>
+-        <source>Delete point</source>
+-        <translation>删除点</translation>
+-    </message>
+-    <message>
+-        <source>Smooth point</source>
+-        <translation>平滑点</translation>
+-    </message>
+-    <message>
+-        <source>Corner point</source>
+-        <translation>角点</translation>
+-    </message>
+-    <message>
+-        <source>Add point</source>
+-        <translation>添加点</translation>
+-    </message>
+-    <message>
+-        <source>Standard Easing</source>
+-        <translation>标准宽松</translation>
+-    </message>
+-    <message>
+-        <source>Simple</source>
+-        <translation>简单</translation>
+-    </message>
+-    <message>
+-        <source>Simple Bounce</source>
+-        <translation>简单反弹</translation>
+-    </message>
+-    <message>
+-        <source>Slow in fast out</source>
+-        <translation>快速减速</translation>
+-    </message>
+-    <message>
+-        <source>Snapping</source>
+-        <translation>捕捉</translation>
+-    </message>
+-    <message>
+-        <source>Complex Bounce</source>
+-        <translation>复杂反弹</translation>
+-    </message>
+-    <message>
+-        <source>Overshoot</source>
+-        <translation>超调</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>TranslationChangeBase</name>
+-    <message>
+-        <source>translate me</source>
+-        <translation>翻译我</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>componentInItem</name>
+-    <message>
+-        <source>&amp;Undo</source>
+-        <translation>撤消(&amp;U)</translation>
+-    </message>
+-    <message>
+-        <source>&amp;Redo</source>
+-        <translation>恢复(&amp;R)</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>main</name>
+-    <message>
+-        <source>Filter out QML/JS files from a resource file that can be cached ahead of time instead</source>
+-        <translation>从可以提前缓存的资源文件中过滤出 QML/JS 文件</translation>
+-    </message>
+-    <message>
+-        <source>Path from original resource file to new one</source>
+-        <translation>从原始资源文件到新资源文件的路径</translation>
+-    </message>
+-    <message>
+-        <source>old-name:new-name</source>
+-        <translation>old-name:new-name</translation>
+-    </message>
+-    <message>
+-        <source>Qt resource file that might later contain one of the compiled files</source>
+-        <translation>Qt 资源文件，以后可能包含一个已编译的文件</translation>
+-    </message>
+-    <message>
+-        <source>resource-file-name</source>
+-        <translation>resource-file-name</translation>
+-    </message>
+-    <message>
+-        <source>Qt resource file path corresponding to the file being compiled</source>
+-        <translation>与正在编译的文件对应的 Qt 资源文件路径</translation>
+-    </message>
+-    <message>
+-        <source>resource-path</source>
+-        <translation>resource-path</translation>
+-    </message>
+-    <message>
+-        <source>Output file name</source>
+-        <translation>输出文件名</translation>
+-    </message>
+-    <message>
+-        <source>file name</source>
+-        <translation>文件名</translation>
+-    </message>
+-    <message>
+-        <source>Conway’s Game of Life</source>
+-        <translation>Conway’s Game of Life</translation>
+-    </message>
+-    <message>
+-        <source>Next</source>
+-        <translation>下一个</translation>
+-    </message>
+-    <message>
+-        <source>TableView Pixelator</source>
+-        <translation>TableView Pixelator</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>maskedmousearea</name>
+-    <message>
+-        <source>CLICK AND HOVER</source>
+-        <translation>点击和悬浮</translation>
+-    </message>
+-</context>
+ <context>
+     <name>qmlRegisterType</name>
+     <message>
+@@ -2189,36 +1656,4 @@ Recording Status: %2</source>
+         <translation>无法安装 %1&apos;%2&apos; 进入受保护模块 &apos;%3&apos; 版本 &apos;%4&apos;</translation>
+     </message>
+ </context>
+-<context>
+-    <name>qstr</name>
+-    <message>
+-        <source>foo</source>
+-        <translation>foo</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>translation</name>
+-    <message>
+-        <source>hello</source>
+-        <translation>hello</translation>
+-    </message>
+-    <message>
+-        <source>hi</source>
+-        <comment>informal &apos;hello&apos;</comment>
+-        <translation>hi</translation>
+-    </message>
+-    <message numerus="yes">
+-        <source>%n duck(s)</source>
+-        <translation>
+-            <numerusform>%n duck(s)</numerusform>
+-        </translation>
+-    </message>
+-</context>
+-<context>
+-    <name>translationChange</name>
+-    <message>
+-        <source>translate me</source>
+-        <translation>翻译我</translation>
+-    </message>
+-</context>
+ </TS>
+diff --git a/translations/qtlocation_zh_CN.ts b/translations/qtlocation_zh_CN.ts
+index 431d32f..b504ff2 100644
+--- a/translations/qtlocation_zh_CN.ts
++++ b/translations/qtlocation_zh_CN.ts
+@@ -1,20 +1,6 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <!DOCTYPE TS>
+ <TS version="2.1" language="zh_CN">
+-<context>
+-    <name>EditorialDelegate</name>
+-    <message>
+-        <source>Untitled editorial</source>
+-        <translation>无标题社论</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>EditorialPage</name>
+-    <message>
+-        <source>Open url</source>
+-        <translation>打开网址</translation>
+-    </message>
+-</context>
+ <context>
+     <name>GeoServiceProviderFactoryEsri</name>
+     <message>
+@@ -24,366 +10,12 @@ Please visit https://developers.arcgis.com/authentication/accessing-arcgis-onlin
+ 请访问https://developers.arcgis.com/authentication/accessing-arcgis-online-services/</translation>
+     </message>
+ </context>
+-<context>
+-    <name>GeoTab</name>
+-    <message>
+-        <source>Timeout occurred!</source>
+-        <translation>超时发生了！</translation>
+-    </message>
+-    <message>
+-        <source>Retrieving update...</source>
+-        <translation>正在检索更新…</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>GeocodeForm.ui</name>
+-    <message>
+-        <source>Geocode</source>
+-        <translation>地理编码</translation>
+-    </message>
+-    <message>
+-        <source>Street</source>
+-        <translation>街道</translation>
+-    </message>
+-    <message>
+-        <source>City</source>
+-        <translation>城市</translation>
+-    </message>
+-    <message>
+-        <source>State</source>
+-        <translation>州</translation>
+-    </message>
+-    <message>
+-        <source>Country</source>
+-        <translation>国家</translation>
+-    </message>
+-    <message>
+-        <source>Postal Code</source>
+-        <translation>邮政编码</translation>
+-    </message>
+-    <message>
+-        <source>Proceed</source>
+-        <translation>继续</translation>
+-    </message>
+-    <message>
+-        <source>Clear</source>
+-        <translation>清除</translation>
+-    </message>
+-    <message>
+-        <source>Cancel</source>
+-        <translation>取消</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>ImageView</name>
+-    <message>
+-        <source>Open url</source>
+-        <translation>打开网址</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>ItemPopupMenu</name>
+-    <message>
+-        <source>Info</source>
+-        <translation>信息</translation>
+-    </message>
+-    <message>
+-        <source>Delete</source>
+-        <translation>删除</translation>
+-    </message>
+-</context>
+ <context>
+     <name>LocaleForm.ui</name>
+-    <message>
+-        <source>en</source>
+-        <translation>en</translation>
+-    </message>
+-    <message>
+-        <source>fr</source>
+-        <translation>fr</translation>
+-    </message>
+-    <message>
+-        <source>Other</source>
+-        <translation>其它</translation>
+-    </message>
+     <message>
+         <source></source>
+         <translation></translation>
+     </message>
+-    <message>
+-        <source>Proceed</source>
+-        <translation>继续</translation>
+-    </message>
+-    <message>
+-        <source>Clear</source>
+-        <translation>清除</translation>
+-    </message>
+-    <message>
+-        <source>Cancel</source>
+-        <translation>取消</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>MainMenu</name>
+-    <message>
+-        <source>Provider</source>
+-        <translation>提供者</translation>
+-    </message>
+-    <message>
+-        <source>Settings</source>
+-        <translation>设置</translation>
+-    </message>
+-    <message>
+-        <source>Search Center</source>
+-        <translation>搜索中心</translation>
+-    </message>
+-    <message>
+-        <source>Search Bounding Box</source>
+-        <translation>搜索边界框</translation>
+-    </message>
+-    <message>
+-        <source>Search Bounding Circle</source>
+-        <translation>搜索边界圆</translation>
+-    </message>
+-    <message>
+-        <source>Search Options</source>
+-        <translation>搜索选项</translation>
+-    </message>
+-    <message>
+-        <source>MapType</source>
+-        <translation>地图类型</translation>
+-    </message>
+-    <message>
+-        <source>Tools</source>
+-        <translation>工具</translation>
+-    </message>
+-    <message>
+-        <source>Reverse geocode</source>
+-        <translation>反向地理编码</translation>
+-    </message>
+-    <message>
+-        <source>Geocode</source>
+-        <translation>地理编码</translation>
+-    </message>
+-    <message>
+-        <source>Route with coordinates</source>
+-        <translation>带坐标的路线</translation>
+-    </message>
+-    <message>
+-        <source>Route with address</source>
+-        <translation>带地址的线路</translation>
+-    </message>
+-    <message>
+-        <source>Hide minimap</source>
+-        <translation>隐藏小地图</translation>
+-    </message>
+-    <message>
+-        <source>Minimap</source>
+-        <translation>小地图</translation>
+-    </message>
+-    <message>
+-        <source>Stop following</source>
+-        <translation>停止跟随</translation>
+-    </message>
+-    <message>
+-        <source>Follow me</source>
+-        <translation>跟随我</translation>
+-    </message>
+-    <message>
+-        <source>Language</source>
+-        <translation>语言</translation>
+-    </message>
+-    <message>
+-        <source>Prefetch Map Data</source>
+-        <translation>预取地图数据</translation>
+-    </message>
+-    <message>
+-        <source>Clear Map Data</source>
+-        <translation>清除地图数据</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>MapPopupMenu</name>
+-    <message>
+-        <source>Add Marker</source>
+-        <translation>添加标记</translation>
+-    </message>
+-    <message>
+-        <source>Get coordinate</source>
+-        <translation>获得坐标</translation>
+-    </message>
+-    <message>
+-        <source>Fit Viewport To Map Items</source>
+-        <translation>适合视区地图项目</translation>
+-    </message>
+-    <message>
+-        <source>Delete all markers</source>
+-        <translation>删除所有标记</translation>
+-    </message>
+-    <message>
+-        <source>Delete all items</source>
+-        <translation>删除所有项目</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>MarkerPopupMenu</name>
+-    <message>
+-        <source>Delete</source>
+-        <translation>删除</translation>
+-    </message>
+-    <message>
+-        <source>Coordinates</source>
+-        <translation>坐标</translation>
+-    </message>
+-    <message>
+-        <source>Move to</source>
+-        <translation>移动到</translation>
+-    </message>
+-    <message>
+-        <source>Route to next point</source>
+-        <translation>到下一个点的路线</translation>
+-    </message>
+-    <message>
+-        <source>Distance to next point</source>
+-        <translation>到下一个点的距离</translation>
+-    </message>
+-    <message>
+-        <source>Route to next points</source>
+-        <translation>到下几个点的路线</translation>
+-    </message>
+-    <message>
+-        <source>Draw...</source>
+-        <translation>绘制...</translation>
+-    </message>
+-    <message>
+-        <source>Image</source>
+-        <translation>图像</translation>
+-    </message>
+-    <message>
+-        <source>Rectangle</source>
+-        <translation>矩形</translation>
+-    </message>
+-    <message>
+-        <source>Circle</source>
+-        <translation>圆形</translation>
+-    </message>
+-    <message>
+-        <source>Polyline</source>
+-        <translation>折线</translation>
+-    </message>
+-    <message>
+-        <source>Polygon</source>
+-        <translation>多边形</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>MessageForm.ui</name>
+-    <message>
+-        <source>type</source>
+-        <translation>类型</translation>
+-    </message>
+-    <message>
+-        <source>message</source>
+-        <translation>消息</translation>
+-    </message>
+-    <message>
+-        <source>OK</source>
+-        <translation>确定</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>PlaceDetails</name>
+-    <message>
+-        <source>No information</source>
+-        <translation>无信息</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>PlaceDetailsForm.ui</name>
+-    <message>
+-        <source>PlaceName</source>
+-        <translation>地名</translation>
+-    </message>
+-    <message>
+-        <source>Address</source>
+-        <translation>地址</translation>
+-    </message>
+-    <message>
+-        <source>Distance:</source>
+-        <translation>距离：</translation>
+-    </message>
+-    <message>
+-        <source>1000 km</source>
+-        <translation>1000 km</translation>
+-    </message>
+-    <message>
+-        <source>Street Number&lt;br/&gt;xxxxx City&lt;br/&gt;Country</source>
+-        <translation>街道号码&lt;br/&gt;xxxxx 城市&lt;br/&gt;国家</translation>
+-    </message>
+-    <message>
+-        <source>Categories</source>
+-        <translation>分类</translation>
+-    </message>
+-    <message>
+-        <source>category1, category2 ,category3</source>
+-        <translation>category1, category2 ,category3</translation>
+-    </message>
+-    <message>
+-        <source>Contact details</source>
+-        <translation>详细联系方式</translation>
+-    </message>
+-    <message>
+-        <source>Phone: </source>
+-        <translation>电话： </translation>
+-    </message>
+-    <message>
+-        <source>000-000-000</source>
+-        <translation>000-000-000</translation>
+-    </message>
+-    <message>
+-        <source>Fax: </source>
+-        <translation>传真： </translation>
+-    </message>
+-    <message>
+-        <source>Email: </source>
+-        <translation>电子邮件： </translation>
+-    </message>
+-    <message>
+-        <source>name@company.com</source>
+-        <translation>name@company.com</translation>
+-    </message>
+-    <message>
+-        <source>Website: </source>
+-        <translation>网站： </translation>
+-    </message>
+-    <message>
+-        <source>http:://company.com</source>
+-        <translation>http:://company.com</translation>
+-    </message>
+-    <message>
+-        <source>Additional information</source>
+-        <translation>附加信息</translation>
+-    </message>
+-    <message>
+-        <source>AdditionalInformation1&lt;br/&gt;AdditionalInformation2&lt;br/&gt;AdditionalInformation3</source>
+-        <translation>AdditionalInformation1&lt;br/&gt;AdditionalInformation2&lt;br/&gt;AdditionalInformation3</translation>
+-    </message>
+-    <message>
+-        <source>Editorials</source>
+-        <translation>社论</translation>
+-    </message>
+-    <message>
+-        <source>Reviews</source>
+-        <translation>评论</translation>
+-    </message>
+-    <message>
+-        <source>Images</source>
+-        <translation>图像</translation>
+-    </message>
+-    <message>
+-        <source>Find similar</source>
+-        <translation>查找相似</translation>
+-    </message>
+ </context>
+ <context>
+     <name>PlaceSearchReplyEsri</name>
+@@ -1677,25 +1309,6 @@ Please visit https://www.mapbox.com</source>
+         <translation>通过 urlprefix 参数设置自定义 URL 地图视图</translation>
+     </message>
+ </context>
+-<context>
+-    <name>QGeoTiledMappingManagerEngineTest</name>
+-    <message>
+-        <source>StreetMap</source>
+-        <translation>StreetMap</translation>
+-    </message>
+-    <message>
+-        <source>SatelliteMapDay</source>
+-        <translation>SatelliteMapDay</translation>
+-    </message>
+-    <message>
+-        <source>CycleMap</source>
+-        <translation>CycleMap</translation>
+-    </message>
+-    <message>
+-        <source>AlternateCameraCapabilities</source>
+-        <translation>AlternateCameraCapabilities</translation>
+-    </message>
+-</context>
+ <context>
+     <name>QPlaceManagerEngineOsm</name>
+     <message>
+@@ -1759,17 +1372,6 @@ Please visit https://www.mapbox.com</source>
+         <translation>网络请求错误</translation>
+     </message>
+ </context>
+-<context>
+-    <name>QPlaceManagerEngineTest</name>
+-    <message>
+-        <source>Place does not exist</source>
+-        <translation>地点不存在</translation>
+-    </message>
+-    <message>
+-        <source>Category does not exist</source>
+-        <translation>类别不存在</translation>
+-    </message>
+-</context>
+ <context>
+     <name>QPlaceSearchReplyMapbox</name>
+     <message>
+@@ -1861,534 +1463,37 @@ Please register at https://developer.here.com/ to get your personal application
+ </context>
+ <context>
+     <name>ReverseGeocodeForm.ui</name>
+-    <message>
+-        <source>Reverse Geocode</source>
+-        <translation>反向地理编码</translation>
+-    </message>
+-    <message>
+-        <source>Latitude</source>
+-        <translation>纬度</translation>
+-    </message>
+-    <message>
+-        <source>Longitude</source>
+-        <translation>经度</translation>
+-    </message>
+     <message>
+         <source></source>
+         <translation></translation>
+     </message>
+-    <message>
+-        <source>Proceed</source>
+-        <translation>继续</translation>
+-    </message>
+-    <message>
+-        <source>Clear</source>
+-        <translation>清除</translation>
+-    </message>
+-    <message>
+-        <source>Cancel</source>
+-        <translation>取消</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>ReviewPage</name>
+-    <message>
+-        <source>Open url</source>
+-        <translation>打开网址</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>RouteAddress</name>
+-    <message>
+-        <source>Geocode Error</source>
+-        <translation>地理编码错误</translation>
+-    </message>
+-    <message>
+-        <source>Unsuccessful geocode</source>
+-        <translation>地理编码不成功</translation>
+-    </message>
+-    <message>
+-        <source>Unable to find location for the</source>
+-        <translation>无法找到的位置</translation>
+-    </message>
+-    <message>
+-        <source>point</source>
+-        <translation>点</translation>
+-    </message>
+-    <message>
+-        <source>Ambiguous geocode</source>
+-        <translation>模糊的地理编码</translation>
+-    </message>
+-    <message>
+-        <source>results found for the</source>
+-        <translation>找到的结果</translation>
+-    </message>
+-    <message>
+-        <source>point, please specify location</source>
+-        <translation>点，请指定位置</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>RouteAddressForm.ui</name>
+-    <message>
+-        <source>Route Address</source>
+-        <translation>线路地址</translation>
+-    </message>
+-    <message>
+-        <source>From</source>
+-        <translation>从</translation>
+-    </message>
+-    <message>
+-        <source>Street</source>
+-        <translation>街道</translation>
+-    </message>
+-    <message>
+-        <source>City</source>
+-        <translation>城市</translation>
+-    </message>
+-    <message>
+-        <source>Country</source>
+-        <translation>国家</translation>
+-    </message>
+-    <message>
+-        <source>To</source>
+-        <translation>到</translation>
+-    </message>
+-    <message>
+-        <source>Proceed</source>
+-        <translation>继续</translation>
+-    </message>
+-    <message>
+-        <source>Clear</source>
+-        <translation>清除</translation>
+-    </message>
+-    <message>
+-        <source>Cancel</source>
+-        <translation>取消</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>RouteCoordinateForm.ui</name>
+-    <message>
+-        <source>Route Coordinates</source>
+-        <translation>线路坐标</translation>
+-    </message>
+-    <message>
+-        <source>From</source>
+-        <translation>从</translation>
+-    </message>
+-    <message>
+-        <source>Latitude</source>
+-        <translation>纬度</translation>
+-    </message>
+-    <message>
+-        <source>Longitude</source>
+-        <translation>经度</translation>
+-    </message>
+-    <message>
+-        <source>To</source>
+-        <translation>到</translation>
+-    </message>
+-    <message>
+-        <source>Proceed</source>
+-        <translation>继续</translation>
+-    </message>
+-    <message>
+-        <source>Clear</source>
+-        <translation>清除</translation>
+-    </message>
+-    <message>
+-        <source>Cancel</source>
+-        <translation>取消</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>RouteList</name>
+-    <message>
+-        <source>Close</source>
+-        <translation>关闭</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>RouteListHeader</name>
+-    <message>
+-        <source>Route Information</source>
+-        <translation>线路信息</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>SearchBar</name>
+-    <message>
+-        <source>Type place...</source>
+-        <translation>输入地点...</translation>
+-    </message>
+ </context>
+ <context>
+     <name>SearchBoundingBoxForm.ui</name>
+-    <message>
+-        <source>Search Bounding Box</source>
+-        <translation>搜索边界框</translation>
+-    </message>
+-    <message>
+-        <source>Latitude</source>
+-        <translation>纬度</translation>
+-    </message>
+-    <message>
+-        <source>Longitude</source>
+-        <translation>经度</translation>
+-    </message>
+     <message>
+         <source></source>
+         <translation></translation>
+     </message>
+-    <message>
+-        <source>Width (deg)</source>
+-        <translation>宽度（度）</translation>
+-    </message>
+-    <message>
+-        <source>Height (deg)</source>
+-        <translation>高度（度）</translation>
+-    </message>
+-    <message>
+-        <source>Set</source>
+-        <translation>设置</translation>
+-    </message>
+-    <message>
+-        <source>Clear</source>
+-        <translation>清除</translation>
+-    </message>
+-    <message>
+-        <source>Cancel</source>
+-        <translation>取消</translation>
+-    </message>
+ </context>
+ <context>
+     <name>SearchBoundingCircleForm.ui</name>
+-    <message>
+-        <source>Search Bounding Circle</source>
+-        <translation>搜索边界圆</translation>
+-    </message>
+-    <message>
+-        <source>Latitude</source>
+-        <translation>纬度</translation>
+-    </message>
+-    <message>
+-        <source>Longitude</source>
+-        <translation>经度</translation>
+-    </message>
+     <message>
+         <source></source>
+         <translation></translation>
+     </message>
+-    <message>
+-        <source>Radius (m)</source>
+-        <translation>半径（米）</translation>
+-    </message>
+-    <message>
+-        <source>Set</source>
+-        <translation>设置</translation>
+-    </message>
+-    <message>
+-        <source>Clear</source>
+-        <translation>清除</translation>
+-    </message>
+-    <message>
+-        <source>Cancel</source>
+-        <translation>取消</translation>
+-    </message>
+ </context>
+ <context>
+     <name>SearchCenterForm.ui</name>
+-    <message>
+-        <source>Search Center</source>
+-        <translation>搜索中心</translation>
+-    </message>
+-    <message>
+-        <source>Latitude</source>
+-        <translation>纬度</translation>
+-    </message>
+-    <message>
+-        <source>Longitude</source>
+-        <translation>经度</translation>
+-    </message>
+     <message>
+         <source></source>
+         <translation></translation>
+     </message>
+-    <message>
+-        <source>Set</source>
+-        <translation>设置</translation>
+-    </message>
+-    <message>
+-        <source>Clear</source>
+-        <translation>清除</translation>
+-    </message>
+-    <message>
+-        <source>Cancel</source>
+-        <translation>取消</translation>
+-    </message>
+ </context>
+ <context>
+     <name>SearchOptionsForm.ui</name>
+-    <message>
+-        <source>Search Options</source>
+-        <translation>搜索选项</translation>
+-    </message>
+-    <message>
+-        <source>Locale(s)</source>
+-        <translation>区域</translation>
+-    </message>
+     <message>
+         <source></source>
+         <translation></translation>
+     </message>
+-    <message>
+-        <source>Enable favorites</source>
+-        <translation>启用收藏夹</translation>
+-    </message>
+-    <message>
+-        <source>Order by distance</source>
+-        <translation>按距离排序</translation>
+-    </message>
+-    <message>
+-        <source>Order by name</source>
+-        <translation>按名称排序</translation>
+-    </message>
+-    <message>
+-        <source>Set</source>
+-        <translation>设置</translation>
+-    </message>
+-    <message>
+-        <source>Clear</source>
+-        <translation>清除</translation>
+-    </message>
+-    <message>
+-        <source>Cancel</source>
+-        <translation>取消</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>SearchResultDelegate</name>
+-    <message>
+-        <source>Sponsored result</source>
+-        <translation>赞助的结果</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>SearchResultView</name>
+-    <message>
+-        <source>Previous</source>
+-        <translation>上一个</translation>
+-    </message>
+-    <message>
+-        <source>Clear</source>
+-        <translation>清除</translation>
+-    </message>
+-    <message>
+-        <source>Next</source>
+-        <translation>下一个</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>flickr</name>
+-    <message>
+-        <source>Network error</source>
+-        <translation>网络错误</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>mapviewer</name>
+-    <message>
+-        <source>Mapviewer</source>
+-        <translation>地图查看器</translation>
+-    </message>
+-    <message>
+-        <source>New Coordinate</source>
+-        <translation>新坐标</translation>
+-    </message>
+-    <message>
+-        <source>Distance</source>
+-        <translation>距离</translation>
+-    </message>
+-    <message>
+-        <source>Distance:</source>
+-        <translation>距离：</translation>
+-    </message>
+-    <message>
+-        <source>Latitude:</source>
+-        <translation>纬度:</translation>
+-    </message>
+-    <message>
+-        <source>Longitude:</source>
+-        <translation>经度:</translation>
+-    </message>
+-    <message>
+-        <source>Coordinates</source>
+-        <translation>坐标</translation>
+-    </message>
+-    <message>
+-        <source>Geocode Error</source>
+-        <translation>地理编码错误</translation>
+-    </message>
+-    <message>
+-        <source>Unsuccessful geocode</source>
+-        <translation>地理编码不成功</translation>
+-    </message>
+-    <message>
+-        <source>Ambiguous geocode</source>
+-        <translation>模糊的地理编码</translation>
+-    </message>
+-    <message>
+-        <source>results found for the given address, please specify location</source>
+-        <translation>找到给定地址的结果，请注明位置</translation>
+-    </message>
+-    <message>
+-        <source>Location</source>
+-        <translation>位置</translation>
+-    </message>
+-    <message>
+-        <source>Route Error</source>
+-        <translation>线路错误</translation>
+-    </message>
+-    <message>
+-        <source>Unable to find a route for the given points</source>
+-        <translation>无法找到给定点的线路</translation>
+-    </message>
+-    <message>
+-        <source>ProviderError</source>
+-        <translation>提供者错误</translation>
+-    </message>
+-    <message>
+-        <source>Try to select other provider</source>
+-        <translation>尝试选择其他提供者</translation>
+-    </message>
+-    <message>
+-        <source>or see</source>
+-        <translation>或查看</translation>
+-    </message>
+-    <message>
+-        <source>how to pass plugin parameters.</source>
+-        <translation>如何传递插件参数。</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>places</name>
+-    <message>
+-        <source>Places</source>
+-        <translation>地点</translation>
+-    </message>
+-    <message>
+-        <source>Search Place Error</source>
+-        <translation>搜索地点错误</translation>
+-    </message>
+-    <message>
+-        <source>Place not found !</source>
+-        <translation>地点未找到！</translation>
+-    </message>
+-    <message>
+-        <source>ProviderError</source>
+-        <translation>提供者错误</translation>
+-    </message>
+-    <message>
+-        <source>Try to select other provider</source>
+-        <translation>尝试选择其他提供者</translation>
+-    </message>
+-    <message>
+-        <source>or see</source>
+-        <translation>或查看</translation>
+-    </message>
+-    <message>
+-        <source>how to pass plugin parameters.</source>
+-        <translation>如何传递插件参数。</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>planespotter</name>
+-    <message>
+-        <source>Hello Berlin!</source>
+-        <translation>Hello Berlin!</translation>
+-    </message>
+-    <message>
+-        <source>Hello Oslo!</source>
+-        <translation>Hello Oslo!</translation>
+-    </message>
+-    <message>
+-        <source>See you Oslo!</source>
+-        <translation>See you Oslo!</translation>
+-    </message>
+-    <message>
+-        <source>See you Berlin!</source>
+-        <translation>See you Berlin!</translation>
+-    </message>
+-    <message>
+-        <source>Hello London!</source>
+-        <translation>Hello London!</translation>
+-    </message>
+-    <message>
+-        <source>See you London!</source>
+-        <translation>See you London!</translation>
+-    </message>
+-    <message>
+-        <source>Hit the plane to start the flight!</source>
+-        <translation>点击飞机开始飞行！</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>satelliteinfo</name>
+-    <message>
+-        <source>Last Error: %1</source>
+-        <comment>%1=error number</comment>
+-        <translation>上一个错误：%1</translation>
+-    </message>
+-    <message>
+-        <source>Single</source>
+-        <translation>单个</translation>
+-    </message>
+-    <message>
+-        <source>Current Mode: stopped</source>
+-        <translation>当前模式：停止</translation>
+-    </message>
+-    <message>
+-        <source>Start</source>
+-        <translation>开始</translation>
+-    </message>
+-    <message>
+-        <source>Current Mode: single</source>
+-        <translation>当前模式：单个</translation>
+-    </message>
+-    <message>
+-        <source>Stop</source>
+-        <translation>停止</translation>
+-    </message>
+-    <message>
+-        <source>Current Mode: running</source>
+-        <translation>当前模式：正在运行</translation>
+-    </message>
+-    <message>
+-        <source>Known Satellites</source>
+-        <translation>已知的卫星</translation>
+-    </message>
+-    <message>
+-        <source>Known Satellites (Demo Mode)</source>
+-        <translation>已知的卫星（演示模式）</translation>
+-    </message>
+-    <message>
+-        <source>Last Error: None</source>
+-        <translation>上一个错误：无</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>tst_geocoding</name>
+-    <message>
+-        <source>Cannot geocode, geocode manager not set.</source>
+-        <translation>无法地理编码，未设置地理编码管理器。</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>tst_routing</name>
+-    <message>
+-        <source>Cannot route, route manager not set.</source>
+-        <translation>无法线路，未设置线路管理器。</translation>
+-    </message>
+ </context>
+ </TS>
+diff --git a/translations/qtmultimedia_zh_CN.ts b/translations/qtmultimedia_zh_CN.ts
+index cf787e8..2aa8ad4 100644
+--- a/translations/qtmultimedia_zh_CN.ts
++++ b/translations/qtmultimedia_zh_CN.ts
+@@ -12,93 +12,6 @@
+         <translation>WAV 文件格式</translation>
+     </message>
+ </context>
+-<context>
+-    <name>AudioDevicesBase</name>
+-    <message>
+-        <source>Audio Devices</source>
+-        <translation>音频设备</translation>
+-    </message>
+-    <message>
+-        <source>Mode</source>
+-        <translation>模式</translation>
+-    </message>
+-    <message>
+-        <source>Device</source>
+-        <translation>设备</translation>
+-    </message>
+-    <message>
+-        <source>Input</source>
+-        <translation>输入</translation>
+-    </message>
+-    <message>
+-        <source>Output</source>
+-        <translation>输出</translation>
+-    </message>
+-    <message>
+-        <source>Test format</source>
+-        <translation>测试格式</translation>
+-    </message>
+-    <message>
+-        <source>&lt;i&gt;Actual Settings&lt;/i&gt;</source>
+-        <translation>&lt;i&gt;实际设置&lt;/i&gt;</translation>
+-    </message>
+-    <message>
+-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+-p, li { white-space: pre-wrap; }
+-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;Nearest Settings&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+-        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+-p, li { white-space: pre-wrap; }
+-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;最近的设置&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+-    </message>
+-    <message>
+-        <source>Test</source>
+-        <translation>测试</translation>
+-    </message>
+-    <message>
+-        <source>Frequency (Hz)</source>
+-        <translation>频率（Hz）</translation>
+-    </message>
+-    <message>
+-        <source>Channels</source>
+-        <translation>频道</translation>
+-    </message>
+-    <message>
+-        <source>Sample size (bits)</source>
+-        <translation>采样大小（位）</translation>
+-    </message>
+-    <message>
+-        <source>Endianness</source>
+-        <translation>字节顺序</translation>
+-    </message>
+-    <message>
+-        <source>Note: an invalid codec &apos;audio/test&apos; exists in order to allow an invalid format to be constructed, and therefore to trigger a &apos;nearest format&apos; calculation.</source>
+-        <translation>注意：存在无效的编解码器“音频/测试”，以便构造无效的格式，从而触发“最接近的格式”计算。</translation>
+-    </message>
+-    <message>
+-        <source>Codec</source>
+-        <translation>编解码器</translation>
+-    </message>
+-    <message>
+-        <source>SampleType</source>
+-        <translation>采样类型</translation>
+-    </message>
+-    <message>
+-        <source>All formats</source>
+-        <translation>所有格式</translation>
+-    </message>
+-    <message>
+-        <source>Populate table</source>
+-        <translation>填充表格</translation>
+-    </message>
+-    <message>
+-        <source>Sample type</source>
+-        <translation>采样类型</translation>
+-    </message>
+-</context>
+ <context>
+     <name>AudioEncoderControl</name>
+     <message>
+@@ -106,219 +19,6 @@ p, li { white-space: pre-wrap; }
+         <translation>线性 PCM 音频数据</translation>
+     </message>
+ </context>
+-<context>
+-    <name>AudioRecorder</name>
+-    <message>
+-        <source>MainWindow</source>
+-        <translation>主窗口</translation>
+-    </message>
+-    <message>
+-        <source>Sample rate:</source>
+-        <translation>采样率：</translation>
+-    </message>
+-    <message>
+-        <source>Audio Codec:</source>
+-        <translation>音频编解码器：</translation>
+-    </message>
+-    <message>
+-        <source>Input Device:</source>
+-        <translation>输入设备：</translation>
+-    </message>
+-    <message>
+-        <source>File Container:</source>
+-        <translation>文件容器：</translation>
+-    </message>
+-    <message>
+-        <source>Channels:</source>
+-        <translation>频道：</translation>
+-    </message>
+-    <message>
+-        <source>Encoding Mode:</source>
+-        <translation>编码方式：</translation>
+-    </message>
+-    <message>
+-        <source>Constant Quality:</source>
+-        <translation>恒定品质：</translation>
+-    </message>
+-    <message>
+-        <source>Constant Bitrate:</source>
+-        <translation>恒定比特率：</translation>
+-    </message>
+-    <message>
+-        <source>Output...</source>
+-        <translation>输出…</translation>
+-    </message>
+-    <message>
+-        <source>Record</source>
+-        <translation>录制</translation>
+-    </message>
+-    <message>
+-        <source>Pause</source>
+-        <translation>暂停</translation>
+-    </message>
+-    <message>
+-        <source>Audio Level:</source>
+-        <translation>音频等级：</translation>
+-    </message>
+-    <message>
+-        <source>Recorded %1 sec</source>
+-        <translation>已录制 %1 秒</translation>
+-    </message>
+-    <message>
+-        <source>Recording to %1</source>
+-        <translation>录制到 %1</translation>
+-    </message>
+-    <message>
+-        <source>Paused</source>
+-        <translation>已暂停</translation>
+-    </message>
+-    <message>
+-        <source>Stopped</source>
+-        <translation>已停止</translation>
+-    </message>
+-    <message>
+-        <source>Stop</source>
+-        <translation>停止</translation>
+-    </message>
+-    <message>
+-        <source>Resume</source>
+-        <translation>继续</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>AudioTest</name>
+-    <message>
+-        <source>Success</source>
+-        <translation>成功</translation>
+-    </message>
+-    <message>
+-        <source>Failed</source>
+-        <translation>失败</translation>
+-    </message>
+-    <message>
+-        <source>No Device</source>
+-        <translation>无设备</translation>
+-    </message>
+-    <message>
+-        <source>Volume:</source>
+-        <translation>音量：</translation>
+-    </message>
+-    <message>
+-        <source>Enable push mode</source>
+-        <translation>启用推送模式</translation>
+-    </message>
+-    <message>
+-        <source>Enable pull mode</source>
+-        <translation>启用拉取模式</translation>
+-    </message>
+-    <message>
+-        <source>Suspend recording</source>
+-        <translation>暂停录制</translation>
+-    </message>
+-    <message>
+-        <source>Resume playback</source>
+-        <translation>继续播放</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>Camera</name>
+-    <message>
+-        <source>Camera</source>
+-        <translation>相机</translation>
+-    </message>
+-    <message>
+-        <source>Focus</source>
+-        <translation>对焦</translation>
+-    </message>
+-    <message>
+-        <source>Image</source>
+-        <translation>图像</translation>
+-    </message>
+-    <message>
+-        <source>Capture Photo</source>
+-        <translation>拍照</translation>
+-    </message>
+-    <message>
+-        <source>Exposure Compensation:</source>
+-        <translation>曝光补偿：</translation>
+-    </message>
+-    <message>
+-        <source>Video</source>
+-        <translation>视频</translation>
+-    </message>
+-    <message>
+-        <source>Record</source>
+-        <translation>录制</translation>
+-    </message>
+-    <message>
+-        <source>Pause</source>
+-        <translation>暂停</translation>
+-    </message>
+-    <message>
+-        <source>Stop</source>
+-        <translation>停止</translation>
+-    </message>
+-    <message>
+-        <source>Mute</source>
+-        <translation>静音</translation>
+-    </message>
+-    <message>
+-        <source>File</source>
+-        <translation>文件</translation>
+-    </message>
+-    <message>
+-        <source>Devices</source>
+-        <translation>设备</translation>
+-    </message>
+-    <message>
+-        <source>Exit</source>
+-        <translation>退出</translation>
+-    </message>
+-    <message>
+-        <source>Start Camera</source>
+-        <translation>启动摄像</translation>
+-    </message>
+-    <message>
+-        <source>Stop Camera</source>
+-        <translation>停止摄像</translation>
+-    </message>
+-    <message>
+-        <source>Settings</source>
+-        <translation>设置</translation>
+-    </message>
+-    <message>
+-        <source>Focusing...</source>
+-        <translation>正在对焦...</translation>
+-    </message>
+-    <message>
+-        <source>Unlock</source>
+-        <translation>解锁</translation>
+-    </message>
+-    <message>
+-        <source>Focused</source>
+-        <translation>已对焦</translation>
+-    </message>
+-    <message>
+-        <source>Focus Failed</source>
+-        <translation>对焦失败</translation>
+-    </message>
+-    <message>
+-        <source>Image Capture Error</source>
+-        <translation>图像捕获错误</translation>
+-    </message>
+-    <message>
+-        <source>Capture Error</source>
+-        <translation>捕获错误</translation>
+-    </message>
+-    <message>
+-        <source>Camera Error</source>
+-        <translation>摄像错误</translation>
+-    </message>
+-    <message>
+-        <source>Captured &quot;%1&quot;</source>
+-        <translation>已捕获“%1”</translation>
+-    </message>
+-</context>
+ <context>
+     <name>CameraBinImageCapture</name>
+     <message>
+@@ -406,78 +106,6 @@ p, li { white-space: pre-wrap; }
+         <translation>未能创建空呈现器</translation>
+     </message>
+ </context>
+-<context>
+-    <name>Engine</name>
+-    <message>
+-        <source>Audio format not supported</source>
+-        <translation>不支持音频格式</translation>
+-    </message>
+-    <message>
+-        <source>Could not open file</source>
+-        <translation>无法打开文件</translation>
+-    </message>
+-    <message>
+-        <source>No suitable format found</source>
+-        <translation>未找到合适的格式</translation>
+-    </message>
+-    <message>
+-        <source>No common input / output format found</source>
+-        <translation>找不到常见的 输入/输出 格式</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>ImageSettings</name>
+-    <message>
+-        <source>Default image format</source>
+-        <translation>默认图像格式</translation>
+-    </message>
+-    <message>
+-        <source>Default Resolution</source>
+-        <translation>默认分辨率</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>ImageSettingsUi</name>
+-    <message>
+-        <source>Image Settings</source>
+-        <translation>图像设置</translation>
+-    </message>
+-    <message>
+-        <source>Image</source>
+-        <translation>图像</translation>
+-    </message>
+-    <message>
+-        <source>Resolution:</source>
+-        <translation>分辨率：</translation>
+-    </message>
+-    <message>
+-        <source>Image Format:</source>
+-        <translation>图像格式：</translation>
+-    </message>
+-    <message>
+-        <source>Quality:</source>
+-        <translation>质量：</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>InputTest</name>
+-    <message>
+-        <source>Enable push mode</source>
+-        <translation>启用推送模式</translation>
+-    </message>
+-    <message>
+-        <source>Enable pull mode</source>
+-        <translation>启用拉取模式</translation>
+-    </message>
+-    <message>
+-        <source>Suspend recording</source>
+-        <translation>暂停录制</translation>
+-    </message>
+-    <message>
+-        <source>Resume recording</source>
+-        <translation>恢复录制</translation>
+-    </message>
+-</context>
+ <context>
+     <name>MFPlayerSession</name>
+     <message>
+@@ -569,102 +197,6 @@ p, li { white-space: pre-wrap; }
+         <translation>不支持的媒体，缺少编解码器。</translation>
+     </message>
+ </context>
+-<context>
+-    <name>MainWidget</name>
+-    <message>
+-        <source>Select a mode to begin</source>
+-        <translation>选择要开始的模式</translation>
+-    </message>
+-    <message>
+-        <source>Open WAV file</source>
+-        <translation>打开 WAV 文件</translation>
+-    </message>
+-    <message>
+-        <source>Spectrum Analyser</source>
+-        <translation>频谱分析</translation>
+-    </message>
+-    <message>
+-        <source>Mode</source>
+-        <translation>模式</translation>
+-    </message>
+-    <message>
+-        <source>Play generated tone</source>
+-        <translation>播放生成的音调</translation>
+-    </message>
+-    <message>
+-        <source>Record and play back</source>
+-        <translation>录制并播放</translation>
+-    </message>
+-    <message>
+-        <source>Play file</source>
+-        <translation>播放文件</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>Player</name>
+-    <message>
+-        <source>Open</source>
+-        <translation>打开</translation>
+-    </message>
+-    <message>
+-        <source>FullScreen</source>
+-        <translation>全屏</translation>
+-    </message>
+-    <message>
+-        <source>Color Options...</source>
+-        <translation>颜色选项...</translation>
+-    </message>
+-    <message>
+-        <source>Service not available</source>
+-        <translation>服务不可用</translation>
+-    </message>
+-    <message>
+-        <source>The QMediaPlayer object does not have a valid service.
+-Please check the media service plugins are installed.</source>
+-        <translation>QMediaPlayer 对象没有有效的服务。
+-请检查已安装的媒体服务插件。</translation>
+-    </message>
+-    <message>
+-        <source>Open Files</source>
+-        <translation>打开文件</translation>
+-    </message>
+-    <message>
+-        <source>Loading...</source>
+-        <translation>正在载入...</translation>
+-    </message>
+-    <message>
+-        <source>Buffering %1%</source>
+-        <translation>缓冲 %1%</translation>
+-    </message>
+-    <message>
+-        <source>Stalled %1%</source>
+-        <translation>停滞 %1%</translation>
+-    </message>
+-    <message>
+-        <source>Brightness</source>
+-        <translation>亮度</translation>
+-    </message>
+-    <message>
+-        <source>Contrast</source>
+-        <translation>对比度</translation>
+-    </message>
+-    <message>
+-        <source>Hue</source>
+-        <translation>色调</translation>
+-    </message>
+-    <message>
+-        <source>Saturation</source>
+-        <translation>饱和度</translation>
+-    </message>
+-    <message>
+-        <source>Close</source>
+-        <translation>关闭</translation>
+-    </message>
+-    <message>
+-        <source>Color Options</source>
+-        <translation>颜色选项</translation>
+-    </message>
+-</context>
+ <context>
+     <name>QAndroidAudioEncoderSettingsControl</name>
+     <message>
+@@ -965,153 +497,4 @@ Please check the media service plugins are installed.</source>
+         <translation>JPEG 图像</translation>
+     </message>
+ </context>
+-<context>
+-    <name>Radio</name>
+-    <message>
+-        <source>No Signal</source>
+-        <translation>无信号</translation>
+-    </message>
+-    <message>
+-        <source>No radio found</source>
+-        <translation>没找到电台</translation>
+-    </message>
+-    <message>
+-        <source>scan Down</source>
+-        <translation>向下扫描</translation>
+-    </message>
+-    <message>
+-        <source>Freq Down</source>
+-        <translation>频率降低</translation>
+-    </message>
+-    <message>
+-        <source>Freq Up</source>
+-        <translation>频率升高</translation>
+-    </message>
+-    <message>
+-        <source>scan Up</source>
+-        <translation>向上扫描</translation>
+-    </message>
+-    <message>
+-        <source>Got Signal</source>
+-        <translation>得到信号</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>SettingsDialog</name>
+-    <message>
+-        <source>None</source>
+-        <translation>无</translation>
+-    </message>
+-    <message>
+-        <source>Input device</source>
+-        <translation>输入设备</translation>
+-    </message>
+-    <message>
+-        <source>Output device</source>
+-        <translation>输出设备</translation>
+-    </message>
+-    <message>
+-        <source>Window function</source>
+-        <translation>窗口功能</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>T</name>
+-    <message>
+-        <source>Default</source>
+-        <translation>默认</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>ToneGeneratorDialog</name>
+-    <message>
+-        <source>Frequency sweep</source>
+-        <translation>频率扫描</translation>
+-    </message>
+-    <message>
+-        <source>Frequency (Hz)</source>
+-        <translation>频率（Hz）</translation>
+-    </message>
+-    <message>
+-        <source>Amplitude</source>
+-        <translation>幅度</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>VideoPlayer</name>
+-    <message>
+-        <source>Rotate Video</source>
+-        <translation>旋转视频</translation>
+-    </message>
+-    <message>
+-        <source>Open...</source>
+-        <translation>打开...</translation>
+-    </message>
+-    <message>
+-        <source>Open Movie</source>
+-        <translation>打开电影</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>VideoSettings</name>
+-    <message>
+-        <source>Default audio codec</source>
+-        <translation>默认音频编解码器</translation>
+-    </message>
+-    <message>
+-        <source>Default video codec</source>
+-        <translation>默认视频编解码器</translation>
+-    </message>
+-    <message>
+-        <source>Default</source>
+-        <translation>默认</translation>
+-    </message>
+-    <message>
+-        <source>Default container</source>
+-        <translation>默认容器</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>VideoSettingsUi</name>
+-    <message>
+-        <source>Video Settings</source>
+-        <translation>视频设置</translation>
+-    </message>
+-    <message>
+-        <source>Audio</source>
+-        <translation>音频</translation>
+-    </message>
+-    <message>
+-        <source>Audio Codec:</source>
+-        <translation>音频编解码器：</translation>
+-    </message>
+-    <message>
+-        <source>Sample Rate:</source>
+-        <translation>采样率：</translation>
+-    </message>
+-    <message>
+-        <source>Quality:</source>
+-        <translation>质量：</translation>
+-    </message>
+-    <message>
+-        <source>Video</source>
+-        <translation>视频</translation>
+-    </message>
+-    <message>
+-        <source>Resolution:</source>
+-        <translation>分辨率：</translation>
+-    </message>
+-    <message>
+-        <source>Framerate:</source>
+-        <translation>帧率：</translation>
+-    </message>
+-    <message>
+-        <source>Video Codec:</source>
+-        <translation>视频编解码器：</translation>
+-    </message>
+-    <message>
+-        <source>Container Format:</source>
+-        <translation>容器格式：</translation>
+-    </message>
+-</context>
+ </TS>
+diff --git a/translations/qtquickcontrols2_zh_CN.ts b/translations/qtquickcontrols2_zh_CN.ts
+index 7d0770d..4e75605 100644
+--- a/translations/qtquickcontrols2_zh_CN.ts
++++ b/translations/qtquickcontrols2_zh_CN.ts
+@@ -56,17 +56,6 @@
+         <translation>按下按钮时按钮是否重复。</translation>
+     </message>
+ </context>
+-<context>
+-    <name>AlarmsPage</name>
+-    <message>
+-        <source>Week Days</source>
+-        <translation>周天</translation>
+-    </message>
+-    <message>
+-        <source>Week Ends</source>
+-        <translation>周末</translation>
+-    </message>
+-</context>
+ <context>
+     <name>BusyIndicatorSpecifics</name>
+     <message>
+@@ -193,62 +182,6 @@
+         <translation>保持组合框按钮上显示的文本。</translation>
+     </message>
+ </context>
+-<context>
+-    <name>ContactDelegate.ui</name>
+-    <message>
+-        <source>Address:</source>
+-        <translation>地址：</translation>
+-    </message>
+-    <message>
+-        <source>City:</source>
+-        <translation>城市：</translation>
+-    </message>
+-    <message>
+-        <source>Number:</source>
+-        <translation>编号：</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>ContactDialog</name>
+-    <message>
+-        <source>Add Contact</source>
+-        <translation>添加联系人</translation>
+-    </message>
+-    <message>
+-        <source>Edit Contact</source>
+-        <translation>编辑联系人</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>ContactForm.ui</name>
+-    <message>
+-        <source>&lt;enter&gt;</source>
+-        <translation>&lt;输入&gt;</translation>
+-    </message>
+-    <message>
+-        <source>Full Name</source>
+-        <translation>全名</translation>
+-    </message>
+-    <message>
+-        <source>Address</source>
+-        <translation>地址</translation>
+-    </message>
+-    <message>
+-        <source>City</source>
+-        <translation>城市</translation>
+-    </message>
+-    <message>
+-        <source>Number</source>
+-        <translation>编号</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>ContactPage</name>
+-    <message>
+-        <source>Contacts</source>
+-        <translation>联系人</translation>
+-    </message>
+-</context>
+ <context>
+     <name>ContainerSection</name>
+     <message>
+@@ -311,21 +244,6 @@
+         <translation>控件是否接受滚轮事件。</translation>
+     </message>
+ </context>
+-<context>
+-    <name>ConversationPage</name>
+-    <message>
+-        <source>Back</source>
+-        <translation>后退</translation>
+-    </message>
+-    <message>
+-        <source>Compose message</source>
+-        <translation>撰写信息</translation>
+-    </message>
+-    <message>
+-        <source>Send</source>
+-        <translation>发送</translation>
+-    </message>
+-</context>
+ <context>
+     <name>DelayButtonSpecifics</name>
+     <message>
+@@ -404,40 +322,6 @@
+         <translation>表盘如何跟踪运动。</translation>
+     </message>
+ </context>
+-<context>
+-    <name>DocumentHandler</name>
+-    <message>
+-        <source>Cannot save: </source>
+-        <translation>无法保存： </translation>
+-    </message>
+-</context>
+-<context>
+-    <name>FitnessPage</name>
+-    <message>
+-        <source>Steps: </source>
+-        <translation>步数： </translation>
+-    </message>
+-    <message>
+-        <source>Calories: </source>
+-        <translation>热量： </translation>
+-    </message>
+-    <message>
+-        <source>Distance: </source>
+-        <translation>距离： </translation>
+-    </message>
+-    <message>
+-        <source> miles</source>
+-        <translation> 英里</translation>
+-    </message>
+-    <message>
+-        <source>Time: </source>
+-        <translation>时间： </translation>
+-    </message>
+-    <message>
+-        <source> mins</source>
+-        <translation> 分钟</translation>
+-    </message>
+-</context>
+ <context>
+     <name>GroupBoxSpecifics</name>
+     <message>
+@@ -479,74 +363,6 @@
+         <translation>样式颜色</translation>
+     </message>
+ </context>
+-<context>
+-    <name>LauncherPage</name>
+-    <message>
+-        <source>World Clock</source>
+-        <translation>世界时钟</translation>
+-    </message>
+-    <message>
+-        <source>Navigation</source>
+-        <translation>导航</translation>
+-    </message>
+-    <message>
+-        <source>Weather</source>
+-        <translation>天气</translation>
+-    </message>
+-    <message>
+-        <source>Fitness</source>
+-        <translation>适应性</translation>
+-    </message>
+-    <message>
+-        <source>Notifications</source>
+-        <translation>通知</translation>
+-    </message>
+-    <message>
+-        <source>Alarm</source>
+-        <translation>警告</translation>
+-    </message>
+-    <message>
+-        <source>Settings</source>
+-        <translation>设置</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>MainForm.ui</name>
+-    <message>
+-        <source>Toggle Size</source>
+-        <translation>切换大小</translation>
+-    </message>
+-    <message>
+-        <source>Bold</source>
+-        <translation>粗体</translation>
+-    </message>
+-    <message>
+-        <source>Underline</source>
+-        <translation>下划线</translation>
+-    </message>
+-    <message>
+-        <source>Customization</source>
+-        <translation>定制</translation>
+-    </message>
+-    <message>
+-        <source>Change Color</source>
+-        <translation>更改颜色</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>NavigationPage</name>
+-    <message>
+-        <source>Walking</source>
+-        <translation>步行</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>NotificationsPage</name>
+-    <message>
+-        <source>images/avatar%1-%2.png</source>
+-        <translation>images/avatar%1-%2.png</translation>
+-    </message>
+-</context>
+ <context>
+     <name>PaddingSection</name>
+     <message>
+@@ -1098,424 +914,4 @@
+         <translation>Whether the tumbler wrap.</translation>
+     </message>
+ </context>
+-<context>
+-    <name>WeatherPage</name>
+-    <message>
+-        <source>Avg: </source>
+-        <translation>Avg: </translation>
+-    </message>
+-    <message>
+-        <source>Min: </source>
+-        <translation>Min: </translation>
+-    </message>
+-    <message>
+-        <source>Max: </source>
+-        <translation>Max: </translation>
+-    </message>
+-</context>
+-<context>
+-    <name>addItem</name>
+-    <message>
+-        <source>New</source>
+-        <translation>新建</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>automotive</name>
+-    <message>
+-        <source>Navigation</source>
+-        <translation>导航</translation>
+-    </message>
+-    <message>
+-        <source>Music</source>
+-        <translation>音乐</translation>
+-    </message>
+-    <message>
+-        <source>Message</source>
+-        <translation>消息</translation>
+-    </message>
+-    <message>
+-        <source>Command</source>
+-        <translation>命令</translation>
+-    </message>
+-    <message>
+-        <source>Settings</source>
+-        <translation>设置</translation>
+-    </message>
+-    <message>
+-        <source>Compact</source>
+-        <translation>紧凑</translation>
+-    </message>
+-    <message>
+-        <source>Full</source>
+-        <translation>完整</translation>
+-    </message>
+-    <message>
+-        <source>VOLUME</source>
+-        <translation>音量</translation>
+-    </message>
+-    <message>
+-        <source>RADIO</source>
+-        <translation>无线电</translation>
+-    </message>
+-    <message>
+-        <source>AUX</source>
+-        <translation>AUX</translation>
+-    </message>
+-    <message>
+-        <source>MP3</source>
+-        <translation>MP3</translation>
+-    </message>
+-    <message>
+-        <source>Sort by</source>
+-        <translation>排序方式</translation>
+-    </message>
+-    <message>
+-        <source>Name</source>
+-        <translation>名称</translation>
+-    </message>
+-    <message>
+-        <source>Frequency</source>
+-        <translation>频率</translation>
+-    </message>
+-    <message>
+-        <source>Favourites</source>
+-        <translation>收藏夹</translation>
+-    </message>
+-    <message>
+-        <source>11:02</source>
+-        <translation>11:02</translation>
+-    </message>
+-    <message>
+-        <source>AM</source>
+-        <translation>AM</translation>
+-    </message>
+-    <message>
+-        <source>01/01/2018</source>
+-        <translation>01/01/2018</translation>
+-    </message>
+-    <message>
+-        <source>Door open</source>
+-        <translation>门打开</translation>
+-    </message>
+-    <message>
+-        <source>31</source>
+-        <translation>31</translation>
+-    </message>
+-    <message>
+-        <source>°C</source>
+-        <translation>°C</translation>
+-    </message>
+-    <message>
+-        <source>Osaka, Japan</source>
+-        <translation>Osaka, Japan</translation>
+-    </message>
+-    <message>
+-        <source>AC</source>
+-        <translation>AC</translation>
+-    </message>
+-    <message>
+-        <source>Temperature</source>
+-        <translation>温度</translation>
+-    </message>
+-    <message>
+-        <source>24°C</source>
+-        <translation>24°C</translation>
+-    </message>
+-    <message>
+-        <source>Power</source>
+-        <translation>功率</translation>
+-    </message>
+-    <message>
+-        <source>10%</source>
+-        <translation>10%</translation>
+-    </message>
+-    <message>
+-        <source>Low</source>
+-        <translation>低</translation>
+-    </message>
+-    <message>
+-        <source>High</source>
+-        <translation>高</translation>
+-    </message>
+-    <message>
+-        <source>Defog</source>
+-        <translation>除雾</translation>
+-    </message>
+-    <message>
+-        <source>Recirculate</source>
+-        <translation>再循环</translation>
+-    </message>
+-    <message>
+-        <source>Windows</source>
+-        <translation>窗户</translation>
+-    </message>
+-    <message>
+-        <source>Air Con.</source>
+-        <translation>空调</translation>
+-    </message>
+-    <message>
+-        <source>Seats</source>
+-        <translation>座位</translation>
+-    </message>
+-    <message>
+-        <source>Statistics</source>
+-        <translation>统计</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>contactlist</name>
+-    <message>
+-        <source>Contact List</source>
+-        <translation>联系人列表</translation>
+-    </message>
+-    <message>
+-        <source>Edit...</source>
+-        <translation>编辑...</translation>
+-    </message>
+-    <message>
+-        <source>Remove</source>
+-        <translation>移除</translation>
+-    </message>
+-    <message>
+-        <source>+</source>
+-        <translation></translation>
+-    </message>
+-</context>
+-<context>
+-    <name>disabledMenuItemKeyNavigation</name>
+-    <message>
+-        <source>Enabled 1</source>
+-        <translation>Enabled 1</translation>
+-    </message>
+-    <message>
+-        <source>Disabled 1</source>
+-        <translation>Disabled 1</translation>
+-    </message>
+-    <message>
+-        <source>Enabled 2</source>
+-        <translation>Enabled 2</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>flatstyle</name>
+-    <message>
+-        <source>Flat Style</source>
+-        <translation>扁平样式</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>focusAfterPopupClosed</name>
+-    <message>
+-        <source>File</source>
+-        <translation>文件</translation>
+-    </message>
+-    <message>
+-        <source>New</source>
+-        <translation>新建</translation>
+-    </message>
+-    <message>
+-        <source>Open</source>
+-        <translation>打开</translation>
+-    </message>
+-    <message>
+-        <source>Close</source>
+-        <translation>关闭</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>main</name>
+-    <message>
+-        <source>Contacts</source>
+-        <translation>联系人</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>menuSeparator</name>
+-    <message>
+-        <source>New</source>
+-        <translation>新建</translation>
+-    </message>
+-    <message>
+-        <source>Save</source>
+-        <translation>保存</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>sidepanel</name>
+-    <message>
+-        <source>Side Panel</source>
+-        <translation>Side Panel</translation>
+-    </message>
+-    <message>
+-        <source>Footer</source>
+-        <translation>页脚</translation>
+-    </message>
+-    <message>
+-        <source>Title %1</source>
+-        <translation>标题 %1</translation>
+-    </message>
+-    <message>
+-        <source>Side Panel Example</source>
+-        <translation>Side Panel 示例</translation>
+-    </message>
+-    <message>
+-        <source>This example demonstrates how Drawer can be used as a non-closable persistent side panel.
+-
+-When the application is in portrait mode, the drawer is an interactive side panel that can be swiped open from the left edge. When the application is in landscape mode, the drawer and the content are laid out side by side.
+-
+-The application is currently in %1 mode.</source>
+-        <translation>此示例演示了如何将 抽屉 用作不可关闭的持久性侧面板。当应用程序处于纵向模式时，抽屉是交互式侧面板，可以从左边缘滑动打开。当应用程序处于横向模式时，抽屉和内容并排布置。该应用程序当前处于 %1 模式。</translation>
+-    </message>
+-    <message>
+-        <source>portrait</source>
+-        <translation>纵向</translation>
+-    </message>
+-    <message>
+-        <source>landscape</source>
+-        <translation>横向</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>swipetoremove</name>
+-    <message>
+-        <source>Swipe to Remove</source>
+-        <translation>滑动即可移除</translation>
+-    </message>
+-    <message>
+-        <source>Removed</source>
+-        <translation>已移除</translation>
+-    </message>
+-    <message>
+-        <source>Swipe no more</source>
+-        <translation>不再滑动</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>texteditor</name>
+-    <message>
+-        <source>Text Editor Example</source>
+-        <translation>Text Editor 示例</translation>
+-    </message>
+-    <message>
+-        <source>About</source>
+-        <translation>关于</translation>
+-    </message>
+-    <message>
+-        <source>Qt Quick Controls 2 - Text Editor Example</source>
+-        <translation>Qt Quick Controls 2 - Text Editor 示例</translation>
+-    </message>
+-    <message>
+-        <source>&amp;File</source>
+-        <translation>文件(&amp;F)</translation>
+-    </message>
+-    <message>
+-        <source>&amp;Open</source>
+-        <translation>打开(&amp;O)</translation>
+-    </message>
+-    <message>
+-        <source>&amp;Save As...</source>
+-        <translation>另存为(&amp;S)...</translation>
+-    </message>
+-    <message>
+-        <source>&amp;Quit</source>
+-        <translation>退出(&amp;Q)</translation>
+-    </message>
+-    <message>
+-        <source>&amp;Edit</source>
+-        <translation>编辑(&amp;E)</translation>
+-    </message>
+-    <message>
+-        <source>&amp;Copy</source>
+-        <translation>复制(&amp;C)</translation>
+-    </message>
+-    <message>
+-        <source>Cu&amp;t</source>
+-        <translation>剪切(&amp;T)</translation>
+-    </message>
+-    <message>
+-        <source>&amp;Paste</source>
+-        <translation>粘贴(&amp;P)</translation>
+-    </message>
+-    <message>
+-        <source>F&amp;ormat</source>
+-        <translation>格式(&amp;O)</translation>
+-    </message>
+-    <message>
+-        <source>&amp;Bold</source>
+-        <translation>粗体(&amp;B)</translation>
+-    </message>
+-    <message>
+-        <source>&amp;Italic</source>
+-        <translation>斜体(&amp;I)</translation>
+-    </message>
+-    <message>
+-        <source>&amp;Underline</source>
+-        <translation>下划线(&amp;U)</translation>
+-    </message>
+-    <message>
+-        <source></source>
+-        <translation></translation>
+-    </message>
+-    <message>
+-        <source>Copy</source>
+-        <translation>复制</translation>
+-    </message>
+-    <message>
+-        <source>Cut</source>
+-        <translation>剪切</translation>
+-    </message>
+-    <message>
+-        <source>Paste</source>
+-        <translation>粘贴</translation>
+-    </message>
+-    <message>
+-        <source>Font...</source>
+-        <translation>字体...</translation>
+-    </message>
+-    <message>
+-        <source>Color...</source>
+-        <translation>颜色...</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>tst_dialogbuttonbox</name>
+-    <message>
+-        <source>implicit width (%1) is less than content width (%2)</source>
+-        <translation>隐式宽度（%1）小于内容宽度（%2）</translation>
+-    </message>
+-    <message>
+-        <source>OK</source>
+-        <translation>确定</translation>
+-    </message>
+-    <message>
+-        <source>Cancel</source>
+-        <translation>取消</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>tst_swipedelegate</name>
+-    <message>
+-        <source>Expanded</source>
+-        <translation>已展开</translation>
+-    </message>
+-    <message>
+-        <source>Collapsed</source>
+-        <translation>已折叠</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>tst_tooltip</name>
+-    <message>
+-        <source>Some helpful text</source>
+-        <translation>一些有用的文字</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>wearable</name>
+-    <message>
+-        <source>Wearable</source>
+-        <translation>可穿戴</translation>
+-    </message>
+-</context>
+ </TS>
+diff --git a/translations/qtquickcontrols_zh_CN.ts b/translations/qtquickcontrols_zh_CN.ts
+index 53d7ac5..77e81c0 100644
+--- a/translations/qtquickcontrols_zh_CN.ts
++++ b/translations/qtquickcontrols_zh_CN.ts
+@@ -264,13 +264,6 @@
+         <translation>隐藏细节</translation>
+     </message>
+ </context>
+-<context>
+-    <name>DocumentHandler</name>
+-    <message>
+-        <source>Cannot save: </source>
+-        <translation>无法保存： </translation>
+-    </message>
+-</context>
+ <context>
+     <name>EditMenu_base</name>
+     <message>
+@@ -306,206 +299,4 @@
+         <translation>全选</translation>
+     </message>
+ </context>
+-<context>
+-    <name>HistoryForm.ui</name>
+-    <message>
+-        <source>Date</source>
+-        <translation>日期</translation>
+-    </message>
+-    <message>
+-        <source>Type</source>
+-        <translation>类型</translation>
+-    </message>
+-    <message>
+-        <source>Description</source>
+-        <translation>说明</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>MainForm.ui</name>
+-    <message>
+-        <source>Customer Id</source>
+-        <translation>客户 ID</translation>
+-    </message>
+-    <message>
+-        <source>First Name</source>
+-        <translation>名字</translation>
+-    </message>
+-    <message>
+-        <source>Last Name</source>
+-        <translation>姓</translation>
+-    </message>
+-    <message>
+-        <source>Customer Settings</source>
+-        <translation>客户设置</translation>
+-    </message>
+-    <message>
+-        <source>Customer Notes</source>
+-        <translation>客户备注</translation>
+-    </message>
+-    <message>
+-        <source>Customer History</source>
+-        <translation>客户历史</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>NotesForm.ui</name>
+-    <message>
+-        <source>Save</source>
+-        <translation>保存</translation>
+-    </message>
+-    <message>
+-        <source>Cancel</source>
+-        <translation>取消</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>SettingsForm.ui</name>
+-    <message>
+-        <source>Title</source>
+-        <translation>标题</translation>
+-    </message>
+-    <message>
+-        <source>First Name</source>
+-        <translation>名字</translation>
+-    </message>
+-    <message>
+-        <source>Last Name</source>
+-        <translation>姓</translation>
+-    </message>
+-    <message>
+-        <source>first name</source>
+-        <translation>名字</translation>
+-    </message>
+-    <message>
+-        <source>last name</source>
+-        <translation>姓</translation>
+-    </message>
+-    <message>
+-        <source>Phone Number</source>
+-        <translation>电话号码</translation>
+-    </message>
+-    <message>
+-        <source>Email</source>
+-        <translation>电子邮件</translation>
+-    </message>
+-    <message>
+-        <source>phone number</source>
+-        <translation>电话号码</translation>
+-    </message>
+-    <message>
+-        <source>email</source>
+-        <translation>电子邮件</translation>
+-    </message>
+-    <message>
+-        <source>Address</source>
+-        <translation>地址</translation>
+-    </message>
+-    <message>
+-        <source>address</source>
+-        <translation>地址</translation>
+-    </message>
+-    <message>
+-        <source>City</source>
+-        <translation>城市</translation>
+-    </message>
+-    <message>
+-        <source>Zip Code</source>
+-        <translation>邮政编码</translation>
+-    </message>
+-    <message>
+-        <source>city</source>
+-        <translation>城市</translation>
+-    </message>
+-    <message>
+-        <source>zip code</source>
+-        <translation>邮政编码</translation>
+-    </message>
+-    <message>
+-        <source>Customer Id</source>
+-        <translation>客户 ID</translation>
+-    </message>
+-    <message>
+-        <source>id</source>
+-        <translation>标识</translation>
+-    </message>
+-    <message>
+-        <source>Save</source>
+-        <translation>保存</translation>
+-    </message>
+-    <message>
+-        <source>Cancel</source>
+-        <translation>取消</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>main</name>
+-    <message>
+-        <source>Styles Example</source>
+-        <translation>样式示例</translation>
+-    </message>
+-    <message>
+-        <source>About</source>
+-        <translation>关于</translation>
+-    </message>
+-    <message>
+-        <source>This example demonstrates how to separate the implementation of an application from the UI using ui.qml files.</source>
+-        <translation>此示例演示如何使用 ui.qml 文件将应用程序的实现与 UI 分离。</translation>
+-    </message>
+-    <message>
+-        <source>&amp;Copy</source>
+-        <translation>复制(&amp;C)</translation>
+-    </message>
+-    <message>
+-        <source>Cu&amp;t</source>
+-        <translation>剪切(&amp;T)</translation>
+-    </message>
+-    <message>
+-        <source>&amp;Paste</source>
+-        <translation>粘贴(&amp;P)</translation>
+-    </message>
+-    <message>
+-        <source>&amp;File</source>
+-        <translation>文件(&amp;F)</translation>
+-    </message>
+-    <message>
+-        <source>E&amp;xit</source>
+-        <translation>退出(&amp;X)</translation>
+-    </message>
+-    <message>
+-        <source>&amp;Edit</source>
+-        <translation>编辑(&amp;E)</translation>
+-    </message>
+-    <message>
+-        <source>&amp;Help</source>
+-        <translation>帮助(&amp;H)</translation>
+-    </message>
+-    <message>
+-        <source>About...</source>
+-        <translation>关于...</translation>
+-    </message>
+-    <message>
+-        <source>File System</source>
+-        <translation>文件系统</translation>
+-    </message>
+-    <message>
+-        <source>File</source>
+-        <translation>文件</translation>
+-    </message>
+-    <message>
+-        <source>Exit</source>
+-        <translation>退出</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>tst_keys</name>
+-    <message>
+-        <source>import QtQuick 2.2;                        import QtQuick.Controls 1.2;                        Item {                            id: window;                            focus: true;                            width: 400; height: 400;                            property alias control: control;                            property var pressedKeys: [];                            property var releasedKeys: [];                            Keys.onPressed: { var keys = pressedKeys; keys.push(event.key); pressedKeys = keys; }                            Keys.onReleased: { var keys = releasedKeys; keys.push(event.key); releasedKeys = keys; }                            %1 {                                id: control;                                property bool accept: false;
+-                                property var pressedKeys: [];                                property var releasedKeys: [];                                Keys.onPressed: { var keys = pressedKeys; keys.push(event.key); pressedKeys = keys; event.accepted = accept; }                                Keys.onReleased: { var keys = releasedKeys; keys.push(event.key); releasedKeys = keys; event.accepted = accept; }                                %2                            }
+-                        }</source>
+-        <translation>import QtQuick 2.2;                        import QtQuick.Controls 1.2;                        Item {                            id: window;                            focus: true;                            width: 400; height: 400;                            property alias control: control;                            property var pressedKeys: [];                            property var releasedKeys: [];                            Keys.onPressed: { var keys = pressedKeys; keys.push(event.key); pressedKeys = keys; }                            Keys.onReleased: { var keys = releasedKeys; keys.push(event.key); releasedKeys = keys; }                            %1 {                                id: control;                                property bool accept: false;
+-                                property var pressedKeys: [];                                property var releasedKeys: [];                                Keys.onPressed: { var keys = pressedKeys; keys.push(event.key); pressedKeys = keys; event.accepted = accept; }                                Keys.onReleased: { var keys = releasedKeys; keys.push(event.key); releasedKeys = keys; event.accepted = accept; }                                %2                            }
+-                        }</translation>
+-    </message>
+-</context>
+ </TS>
+diff --git a/translations/qtscript_zh_CN.ts b/translations/qtscript_zh_CN.ts
+index 5b9e0f1..c38b209 100644
+--- a/translations/qtscript_zh_CN.ts
++++ b/translations/qtscript_zh_CN.ts
+@@ -1,121 +1,6 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <!DOCTYPE TS>
+ <TS version="2.1" language="zh_CN">
+-<context>
+-    <name>Calculator</name>
+-    <message>
+-        <source>Calculator</source>
+-        <translation>计算器</translation>
+-    </message>
+-    <message>
+-        <source>Backspace</source>
+-        <translation>Backspace</translation>
+-    </message>
+-    <message>
+-        <source>MC</source>
+-        <translation>MC</translation>
+-    </message>
+-    <message>
+-        <source>7</source>
+-        <translation>7</translation>
+-    </message>
+-    <message>
+-        <source>8</source>
+-        <translation>8</translation>
+-    </message>
+-    <message>
+-        <source>9</source>
+-        <translation>9</translation>
+-    </message>
+-    <message>
+-        <source>/</source>
+-        <translation>/</translation>
+-    </message>
+-    <message>
+-        <source>Sqrt</source>
+-        <translation>Sqrt</translation>
+-    </message>
+-    <message>
+-        <source>Clear</source>
+-        <translation>Clear</translation>
+-    </message>
+-    <message>
+-        <source>Clear All</source>
+-        <translation>Clear All</translation>
+-    </message>
+-    <message>
+-        <source>MR</source>
+-        <translation>MR</translation>
+-    </message>
+-    <message>
+-        <source>4</source>
+-        <translation>4</translation>
+-    </message>
+-    <message>
+-        <source>5</source>
+-        <translation>5</translation>
+-    </message>
+-    <message>
+-        <source>6</source>
+-        <translation>6</translation>
+-    </message>
+-    <message>
+-        <source>*</source>
+-        <translation>*</translation>
+-    </message>
+-    <message>
+-        <source>x^2</source>
+-        <translation>x^2</translation>
+-    </message>
+-    <message>
+-        <source>MS</source>
+-        <translation>MS</translation>
+-    </message>
+-    <message>
+-        <source>1</source>
+-        <translation></translation>
+-    </message>
+-    <message>
+-        <source>2</source>
+-        <translation>2</translation>
+-    </message>
+-    <message>
+-        <source>3</source>
+-        <translation>3</translation>
+-    </message>
+-    <message>
+-        <source>-</source>
+-        <translation>-</translation>
+-    </message>
+-    <message>
+-        <source>1/x</source>
+-        <translation>1/x</translation>
+-    </message>
+-    <message>
+-        <source>M+</source>
+-        <translation>M+</translation>
+-    </message>
+-    <message>
+-        <source>0</source>
+-        <translation></translation>
+-    </message>
+-    <message>
+-        <source>.</source>
+-        <translation>.</translation>
+-    </message>
+-    <message>
+-        <source>+-</source>
+-        <translation>+-</translation>
+-    </message>
+-    <message>
+-        <source>+</source>
+-        <translation></translation>
+-    </message>
+-    <message>
+-        <source>=</source>
+-        <translation>=</translation>
+-    </message>
+-</context>
+ <context>
+     <name>QScriptBreakpointsModel</name>
+     <message>
+@@ -391,72 +276,4 @@
+         <translation>关闭</translation>
+     </message>
+ </context>
+-<context>
+-    <name>TetrixBoard</name>
+-    <message>
+-        <source>Pause</source>
+-        <translation>暂停</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>TetrixWindow</name>
+-    <message>
+-        <source>Tetrix</source>
+-        <translation>Tetrix</translation>
+-    </message>
+-    <message>
+-        <source>&amp;Start</source>
+-        <translation>开始(&amp;S)</translation>
+-    </message>
+-    <message>
+-        <source>LINES REMOVED</source>
+-        <translation>已删除的行</translation>
+-    </message>
+-    <message>
+-        <source>LEVEL</source>
+-        <translation>级别</translation>
+-    </message>
+-    <message>
+-        <source>NEXT</source>
+-        <translation>下一个</translation>
+-    </message>
+-    <message>
+-        <source>SCORE</source>
+-        <translation>得分</translation>
+-    </message>
+-    <message>
+-        <source>&amp;Quit</source>
+-        <translation>退出(&amp;Q)</translation>
+-    </message>
+-    <message>
+-        <source>&amp;Pause</source>
+-        <translation>暂停(&amp;P)</translation>
+-    </message>
+-    <message>
+-        <source>&amp;Debug</source>
+-        <translation>调试(&amp;D)</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>Window</name>
+-    <message>
+-        <source>Run in Debugger</source>
+-        <translation>在调试器中运行</translation>
+-    </message>
+-    <message>
+-        <source>Context 2D</source>
+-        <translation>上下文 2D</translation>
+-    </message>
+-    <message>
+-        <source>Line %0: %1</source>
+-        <translation>行 %0：%1</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>helloscript</name>
+-    <message>
+-        <source>Hello World!</source>
+-        <translation>Hello World!</translation>
+-    </message>
+-</context>
+ </TS>
+diff --git a/translations/qtxmlpatterns_zh_CN.ts b/translations/qtxmlpatterns_zh_CN.ts
+index 901580c..d0c0484 100644
+--- a/translations/qtxmlpatterns_zh_CN.ts
++++ b/translations/qtxmlpatterns_zh_CN.ts
+@@ -1,157 +1,6 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <!DOCTYPE TS>
+ <TS version="2.1" language="zh_CN">
+-<context>
+-    <name>MainWindow</name>
+-    <message>
+-        <source>File Tree</source>
+-        <translation>文件树</translation>
+-    </message>
+-    <message>
+-        <source>TextLabel</source>
+-        <translation>文本标签</translation>
+-    </message>
+-    <message>
+-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+-p, li { white-space: pre-wrap; }
+-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+-        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+-p, li { white-space: pre-wrap; }
+-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+-    </message>
+-    <message>
+-        <source>&amp;File</source>
+-        <translation>文件(&amp;F)</translation>
+-    </message>
+-    <message>
+-        <source>&amp;Help</source>
+-        <translation>帮助(&amp;H)</translation>
+-    </message>
+-    <message>
+-        <source>Open Directory...</source>
+-        <translation>打开目录…</translation>
+-    </message>
+-    <message>
+-        <source>Ctrl+O</source>
+-        <translation></translation>
+-    </message>
+-    <message>
+-        <source>&amp;About</source>
+-        <translation>关于(&amp;A)</translation>
+-    </message>
+-    <message>
+-        <source>Ctrl+A</source>
+-        <translation></translation>
+-    </message>
+-    <message>
+-        <source>Use the Open menu entry to select a directory.</source>
+-        <translation>使用“打开”菜单项选择目录。</translation>
+-    </message>
+-    <message>
+-        <source>Model of %1 output as XML.</source>
+-        <translation>%1 的模型输出为 XML。</translation>
+-    </message>
+-    <message>
+-        <source>About File Tree</source>
+-        <translation>关于文件树</translation>
+-    </message>
+-    <message>
+-        <source>&lt;p&gt;Select &lt;b&gt;File-&gt;Open Directory&lt;/b&gt; and choose a directory. The directory is then loaded into the model, and the model is displayed on the left as XML.&lt;/p&gt;&lt;p&gt;From the query menu on the right, select a query. The query is displayed and then run on the model. The results are displayed below the query.&lt;/p&gt;</source>
+-        <translation>&lt;p&gt;选择&lt;b&gt;文件-&gt;打开目录&lt;/b&gt;并选择一个目录。然后将该目录加载到模型中，模型在左侧显示为 XML 。&lt;/p&gt;&lt;p&gt;从右侧的查询菜单中选择一个查询。将显示该查询，然后在模型上运行。结果显示在查询下方。&lt;/p&gt;</translation>
+-    </message>
+-    <message>
+-        <source>Contact Schema</source>
+-        <translation>Contact 架构</translation>
+-    </message>
+-    <message>
+-        <source>Recipe Schema</source>
+-        <translation>Recipe 架构</translation>
+-    </message>
+-    <message>
+-        <source>Order Schema</source>
+-        <translation>Order 架构</translation>
+-    </message>
+-    <message>
+-        <source>Valid Contact Instance</source>
+-        <translation>有效的 Contact  实例</translation>
+-    </message>
+-    <message>
+-        <source>Invalid Contact Instance</source>
+-        <translation>无效的 Contact 实例</translation>
+-    </message>
+-    <message>
+-        <source>Valid Recipe Instance</source>
+-        <translation>有效的 Recipe 实例</translation>
+-    </message>
+-    <message>
+-        <source>Invalid Recipe Instance</source>
+-        <translation>无效的 Recipe 实例</translation>
+-    </message>
+-    <message>
+-        <source>Valid Order Instance</source>
+-        <translation>有效的 Order 实例</translation>
+-    </message>
+-    <message>
+-        <source>Invalid Order Instance</source>
+-        <translation>无效的 Order 实例</translation>
+-    </message>
+-    <message>
+-        <source>validation successful</source>
+-        <translation>验证成功</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>QApplicationArgumentParserPrivate</name>
+-    <message>
+-        <source>Pass -help for information about the command line.</source>
+-        <translation>传递 -help 以获取有关命令行的信息。</translation>
+-    </message>
+-    <message>
+-        <source>Cannot convert %1 to type %2.</source>
+-        <translation>无法将 %1 转换为类型 %2。</translation>
+-    </message>
+-    <message>
+-        <source>%1 version %2 using Qt %3</source>
+-        <translation>%1 版本 %2 使用 Qt %3</translation>
+-    </message>
+-    <message>
+-        <source>&quot;%1&quot; is an unknown argument.</source>
+-        <translation>“%1”是未知参数。</translation>
+-    </message>
+-    <message>
+-        <source>&quot;%1&quot; can only be used once.</source>
+-        <translation>“%1”只能使用一次。</translation>
+-    </message>
+-    <message>
+-        <source>&quot;%1&quot; can only be used %2 times.</source>
+-        <translation>“%1”只能使用 %2 次。</translation>
+-    </message>
+-    <message>
+-        <source>&quot;%1&quot; must be followed by a value.</source>
+-        <translation>“%1”后面必须跟一个值。</translation>
+-    </message>
+-    <message numerus="yes">
+-        <source>%1 must occur at least %2 times, therefore %3 times is insufficient.</source>
+-        <comment>The number is for %2.</comment>
+-        <translation>
+-            <numerusform>%1 必须至少出现 %2 次，因此 %3 次不够。</numerusform>
+-        </translation>
+-    </message>
+-    <message numerus="yes">
+-        <source>%1 can occur at most %2 times</source>
+-        <translation>
+-            <numerusform>%1 最多可以发生 %2 次</numerusform>
+-        </translation>
+-    </message>
+-    <message>
+-        <source>regular expression</source>
+-        <translation>正则表达式</translation>
+-    </message>
+-</context>
+ <context>
+     <name>QQuickXmlListModel</name>
+     <message>
+@@ -199,66 +48,6 @@ p, li { white-space: pre-wrap; }
+         <source>Error %1 in %2: %3</source>
+         <translation>错误 %1 在 %2：%3</translation>
+     </message>
+-    <message>
+-        <source>Each binding must contain an equal sign.</source>
+-        <translation>每个绑定必须包含等号。</translation>
+-    </message>
+-    <message>
+-        <source>The variable name must be a valid NCName, which %1 isn&apos;t.</source>
+-        <translation>变量名必须是有效的 NCName，%1 不是。</translation>
+-    </message>
+-    <message>
+-        <source>Failed to open file %1 for writing: %2</source>
+-        <translation>无法打开文件 %1 进行写入：%2</translation>
+-    </message>
+-    <message>
+-        <source>%1 is an invalid Clark Name</source>
+-        <translation>%1 是无效的 Clark 名称</translation>
+-    </message>
+-    <message>
+-        <source>Binds an external variable. The value is directly available using the variable reference: $name.</source>
+-        <translation>绑定外部变量。使用变量引用：$name 可以直接获得该值。</translation>
+-    </message>
+-    <message>
+-        <source>By default output is formatted for readability. When specified, strict serialization is performed.</source>
+-        <translation>默认情况下，输出可读性的格式。指定后，将执行严格的序列化。</translation>
+-    </message>
+-    <message>
+-        <source>If specified, all filenames on the command line are interpreted as URIs instead of a local filenames.</source>
+-        <translation>如果指定，命令行上的所有文件名都将解释为 URI，而不是本地文件名。</translation>
+-    </message>
+-    <message>
+-        <source>The name of the initial template to call as a Clark Name.</source>
+-        <translation>要作为 Clark 名称调用的初始模板的名称。</translation>
+-    </message>
+-    <message>
+-        <source>A local filename pointing to the query to run. If the name ends with .xsl it&apos;s assumed to be an XSL-T stylesheet. If it ends with .xq, it&apos;s assumed to be an XQuery query. (In other cases it&apos;s also assumed to be an XQuery query, but that interpretation may change in a future release of Qt.)</source>
+-        <translation>指向要运行的查询的本地文件名。如果名称以 .xsl 结尾，则假定它是 XSL-T 样式表。如果它以 .xq 结尾，则假定它是一个 XQuery 查询。（在其他情况下，它也被假定为 XQuery 查询，但在未来的 Qt 版本中，该解释可能会发生变化。）</translation>
+-    </message>
+-    <message>
+-        <source>The document to use as focus. Mandatory in case a stylesheet is used. This option is also affected by the is-uris option.</source>
+-        <translation>用作焦点的文件。如果使用样式表，则必须提供。此选项也受 is-uris 选项的影响。</translation>
+-    </message>
+-    <message>
+-        <source>A local file to which the output should be written. The file is overwritten, or if not exist, created. If absent, stdout is used.</source>
+-        <translation>应写入输出的本地文件。该文件被覆盖，如果不存在，则被创建。如果没有，则使用 stdout。</translation>
+-    </message>
+-    <message>
+-        <source>An initial template name cannot be specified when running an XQuery.</source>
+-        <translation>运行 XQuery 时无法指定初始模板名称。</translation>
+-    </message>
+-    <message>
+-        <source>Each parameter must be unique, %1 is specified at least twice.</source>
+-        <translation>每个参数必须是唯一的，%1 至少指定两次。</translation>
+-    </message>
+-    <message>
+-        <source>When a stylesheet is used, a document must be specified as a focus, or an initial template name must be specified, or both.</source>
+-        <translation>使用样式表时，必须将文档指定为焦点，或者必须指定初始模板名称，或两者都指定。</translation>
+-    </message>
+-    <message>
+-        <source>usage: xmlpatternsvalidator (&lt;schema url&gt; | &lt;instance url&gt; &lt;schema url&gt; | &lt;instance url&gt;)</source>
+-        <translation>用法：xmlpatternsvalidator (&lt;schema url&gt; | &lt;instance url&gt; &lt;schema url&gt; | &lt;instance url&gt;)</translation>
+-    </message>
+ </context>
+ <context>
+     <name>QtXmlPatterns</name>
+@@ -2167,57 +1956,4 @@ p, li { white-space: pre-wrap; }
+         <translation>只支持 Unicode 代码点校验(Unicode Codepoint Collation)(%1)。%2 是不被支持的。</translation>
+     </message>
+ </context>
+-<context>
+-    <name>QueryMainWindow</name>
+-    <message>
+-        <source>Unable to open file</source>
+-        <translation>无法打开文件</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>QueryWidget</name>
+-    <message>
+-        <source>Recipes XQuery Example</source>
+-        <translation>Recipes XQuery 示例</translation>
+-    </message>
+-    <message>
+-        <source>Input Document</source>
+-        <translation>输入文档</translation>
+-    </message>
+-    <message>
+-        <source>Select your query:</source>
+-        <translation>选择查询：</translation>
+-    </message>
+-    <message>
+-        <source>Output Document</source>
+-        <translation>输出文档</translation>
+-    </message>
+-</context>
+-<context>
+-    <name>SchemaMainWindow</name>
+-    <message>
+-        <source>XML Schema Validation</source>
+-        <translation>XML 构架验证</translation>
+-    </message>
+-    <message>
+-        <source>XML Schema Document:</source>
+-        <translation>XML 架构文档：</translation>
+-    </message>
+-    <message>
+-        <source>XML Instance Document:</source>
+-        <translation>XML 实例文档：</translation>
+-    </message>
+-    <message>
+-        <source>Status:</source>
+-        <translation>状态：</translation>
+-    </message>
+-    <message>
+-        <source>not validated</source>
+-        <translation>未经验证</translation>
+-    </message>
+-    <message>
+-        <source>Validate</source>
+-        <translation>验证</translation>
+-    </message>
+-</context>
+ </TS>
+-- 
+2.31.1
+
