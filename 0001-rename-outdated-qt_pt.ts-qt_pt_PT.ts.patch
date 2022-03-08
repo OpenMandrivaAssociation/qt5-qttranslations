@@ -1,0 +1,26 @@
+From 6232efc1974427d9f10660db4905d46fe6d73c70 Mon Sep 17 00:00:00 2001
+From: Oswald Buddenhagen <oswald.buddenhagen@qt.io>
+Date: Wed, 8 Sep 2021 11:39:34 +0200
+Subject: [PATCH 1/2] rename (outdated) qt_pt.ts => qt_pt_PT.ts
+
+... as that's what it really is.
+
+Fixes: QTBUG-95013
+Change-Id: I7ecffed15c5bea3f47c2d5c0eea15dc7b13eeb83
+Reviewed-by: Luiz Fernando Ranghetti <elchevive68@gmail.com>
+Reviewed-by: Edward Welbourne <edward.welbourne@qt.io>
+
+
+(cherry picked from commit 530c2dd86b3cd8838f72f0514407e35b56c71402)
+---
+ translations/{qt_pt.ts => qt_pt_PT.ts} | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename translations/{qt_pt.ts => qt_pt_PT.ts} (100%)
+
+diff --git a/translations/qt_pt.ts b/translations/qt_pt_PT.ts
+similarity index 100%
+rename from translations/qt_pt.ts
+rename to translations/qt_pt_PT.ts
+-- 
+2.35.1
+

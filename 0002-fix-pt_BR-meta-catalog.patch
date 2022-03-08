@@ -1,0 +1,37 @@
+From a6d5e7f84a57394db4c8b069f81c56cfeb802e19 Mon Sep 17 00:00:00 2001
+From: Oswald Buddenhagen <oswald.buddenhagen@gmx.de>
+Date: Tue, 6 Jul 2021 15:38:44 +0200
+Subject: [PATCH 2/2] fix pt_BR meta catalog
+
+Fixes: QTBUG-95014
+Change-Id: If01521cc23038328006533f08eb0ba4de1a64eee
+Reviewed-by: Luiz Fernando Ranghetti <elchevive68@gmail.com>
+Reviewed-by: Kai Koehne <kai.koehne@qt.io>
+
+
+(cherry picked from commit 196fa90b19e5748ca2f65f77079d2ce21537bc06)
+---
+ translations/qt_pt_BR.ts | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/translations/qt_pt_BR.ts b/translations/qt_pt_BR.ts
+index 1260277..813d0a6 100644
+--- a/translations/qt_pt_BR.ts
++++ b/translations/qt_pt_BR.ts
+@@ -2,9 +2,9 @@
+ <!DOCTYPE TS>
+ <TS version="2.1" language="pt_BR">
+ <dependencies>
+-<dependency catalog="qtbase_"/>
+-<dependency catalog="qtscript_"/>
+-<dependency catalog="qtmultimedia_"/>
+-<dependency catalog="qtxmlpatterns_"/>
++<dependency catalog="qtbase_pt_BR"/>
++<dependency catalog="qtscript_pt_BR"/>
++<dependency catalog="qtmultimedia_pt_BR"/>
++<dependency catalog="qtxmlpatterns_pt_BR"/>
+ </dependencies>
+ </TS>
+-- 
+2.35.1
+
