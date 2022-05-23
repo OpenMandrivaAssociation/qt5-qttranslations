@@ -1,4 +1,4 @@
-From a6d5e7f84a57394db4c8b069f81c56cfeb802e19 Mon Sep 17 00:00:00 2001
+From 527dcd684e8d5c645870c854b86df77edeedbc22 Mon Sep 17 00:00:00 2001
 From: Oswald Buddenhagen <oswald.buddenhagen@gmx.de>
 Date: Tue, 6 Jul 2021 15:38:44 +0200
 Subject: [PATCH 2/2] fix pt_BR meta catalog
@@ -33,5 +33,5 @@ index 1260277..813d0a6 100644
  </dependencies>
  </TS>
 -- 
-2.35.1
+2.36.1
 
