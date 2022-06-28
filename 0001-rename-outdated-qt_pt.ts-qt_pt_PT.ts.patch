@@ -1,4 +1,4 @@
-From 7ee289c6ce80b53418785e35546c7d8257dfdeff Mon Sep 17 00:00:00 2001
+From fc57d49aeef304199193f9488f2d9ba7e465e893 Mon Sep 17 00:00:00 2001
 From: Oswald Buddenhagen <oswald.buddenhagen@qt.io>
 Date: Wed, 8 Sep 2021 11:39:34 +0200
 Subject: [PATCH 1/2] rename (outdated) qt_pt.ts => qt_pt_PT.ts
@@ -22,5 +22,5 @@ similarity index 100%
 rename from translations/qt_pt.ts
 rename to translations/qt_pt_PT.ts
 -- 
-2.36.1
+2.37.0
 
