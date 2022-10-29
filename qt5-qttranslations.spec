@@ -1,7 +1,7 @@
 %define beta %{nil}
 
 Name:		qt5-qttranslations
-Version:	5.15.6
+Version:	5.15.7
 %if "%{beta}" != ""
 Release:	0.%{beta}.1
 %define qttarballdir qttranslations-everywhere-src-%{version}-%{beta}
@@ -12,8 +12,7 @@ Release:	1
 Source0:	http://download.qt.io/official_releases/qt/%(echo %{version}|cut -d. -f1-2)/%{version}/submodules/%{qttarballdir}.tar.xz
 %endif
 # From KDE
-Patch1000:	0001-rename-outdated-qt_pt.ts-qt_pt_PT.ts.patch
-Patch1001:	0002-fix-pt_BR-meta-catalog.patch
+# [currently no patches]
 Summary:	Qt GUI toolkit
 Group:		Development/KDE and Qt
 License:	LGPLv2 with exceptions or GPLv3 with exceptions and GFDL
