@@ -35,7 +35,7 @@ Translation files for Qt Project apps.
 
 %prep
 %autosetup -n %(echo %qttarballdir|sed -e 's,-opensource,,') -p1
-%{_libdir}/qt5/bin/syncqt.pl -version %{version}
+%{_prefix}/lib*/qt5/bin/syncqt.pl -version %{version}
 
 %build
 %qmake_qt5
